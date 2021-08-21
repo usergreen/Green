@@ -1,0 +1,25 @@
+=== This page is my sandbox, or memos and drafts of documents.===
+
+
+Deleting a repository
+
+Browse to the directory in your repository that you want to delete.
+
+In the top-right corner, click settings
+Scrolldows ti the botom.
+Find "Danger Zone"
+Click "Delete this repository"
+    Once you delete a repository, there is no going back. Please be certain.
+
+----------------------------------------------
+Following is obsolete now!
+
+Deleting a directory
+
+    Browse to the directory in your repository that you want to delete.
+
+    In the top-right corner, click 
+
+, then click Delete directory. 
+
+https://docs.github.com/ja/github/managing-files-in-a-repository/managing-files-on-github/deleting-files-in-a-repository
