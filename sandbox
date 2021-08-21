@@ -1,6 +1,14 @@
 === This page is my sandbox, or memos and drafts of documents.===
 
+MX-FAQs-old.ja.txt
+v. 20191009
 
+This is a translated document of the original English version for Japanese,
+found at https://mxlinux.org/wiki/help-files/mx-faqs/ The original document is included
+in MX Welcome and released under GPL v.3 from MX project. See https://mxlinux.org/wiki/licenses/license-mx-welcome/
+
+
+-----------------------------------------------------------------
 Deleting a repository
 
 Browse to the directory in your repository that you want to delete.
@@ -11,7 +19,7 @@ Find "Danger Zone"
 Click "Delete this repository"
     Once you delete a repository, there is no going back. Please be certain.
 
-----------------------------------------------
+--------------------------
 Following is obsolete now!
 
 Deleting a directory
