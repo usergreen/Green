@@ -1,0 +1,826 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Alex <meerhoff.a@protonmail.com>, 2016
+# ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2016
+# ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2017
+# Green, 2021
+# Radical Raccoon, 2016
+# Thomas Halsted <thalsted@outlook.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: solus-sc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-27 09:58+0100\n"
+"PO-Revision-Date: 2021-08-12 03:42+0000\n"
+"Last-Translator: Green\n"
+"Language-Team: Japanese (http://www.transifex.com/solus-project/solus-sc/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../repo_data/components.xml.in.h:1
+msgid "System Base"
+msgstr "基本システム"
+
+#: ../repo_data/components.xml.in.h:2
+msgid "Base Components"
+msgstr "基本コンポーネント"
+
+#: ../repo_data/components.xml.in.h:3
+msgid "Base components of Solus"
+msgstr "Solus の基本コンポーネント"
+
+#: ../repo_data/components.xml.in.h:4
+msgid "Boot utilities"
+msgstr "起動ユーティリティ"
+
+#: ../repo_data/components.xml.in.h:5
+msgid "Tools and daemons required early in the boot process"
+msgstr "起動プロセスの初期段階で必要なツールとデーモン"
+
+#: ../repo_data/components.xml.in.h:6
+msgid "System utilities"
+msgstr "システムユーティリティ"
+
+#: ../repo_data/components.xml.in.h:7
+msgid ""
+"Commonly used components for a full installation, not used in minimal "
+"environments"
+msgstr "フルインストールで一般的に使用するコンポーネント。最小環境では使用しません。"
+
+#: ../repo_data/components.xml.in.h:8
+msgid "Base development tools"
+msgstr "開発基本ツール"
+
+#: ../repo_data/components.xml.in.h:9
+msgid "Development utilities - base system"
+msgstr "開発ユーティリティ - 基本システム"
+
+#: ../repo_data/components.xml.in.h:10
+msgid "X.Org Base Components"
+msgstr "X.Org 基本コンポーネント"
+
+#: ../repo_data/components.xml.in.h:11
+msgid "Base components required for the X.Org System"
+msgstr "X.Org システムに必要な基本コンポーネント"
+
+#: ../repo_data/components.xml.in.h:12
+msgid "X.Org Protocol Headers"
+msgstr "X.Org プロトコル・ヘッダ"
+
+#: ../repo_data/components.xml.in.h:13
+msgid "Protocol headers required for building X.Org Libraries"
+msgstr "X.Org ライブラリのビルド時必要なプロトコルヘッダ"
+
+#: ../repo_data/components.xml.in.h:14
+msgid "X.Org Core Libraries"
+msgstr "X.Org の主要ライブラリ"
+
+#: ../repo_data/components.xml.in.h:15
+msgid "Core libraries required by X.Org"
+msgstr "X.Org に必要な主要ライブラリ"
+
+#: ../repo_data/components.xml.in.h:16
+msgid "X.Org Core Fonts"
+msgstr "X.Org の中核フォント"
+
+#: ../repo_data/components.xml.in.h:17
+msgid "Core fonts required by X.Org"
+msgstr "X.Orgに必要な中核フォント"
+
+#: ../repo_data/components.xml.in.h:18
+msgid "X.Org Core Applications"
+msgstr "X.Org の主要アプリケーション"
+
+#: ../repo_data/components.xml.in.h:19
+msgid "Collection of simple applications for X.Org"
+msgstr "X.Org 用のシンプルなアプリケーション集"
+
+#: ../repo_data/components.xml.in.h:20
+msgid "X.Org Display"
+msgstr "X.Org ディスプレイ"
+
+#: ../repo_data/components.xml.in.h:21
+msgid "Software required to run an X.Org Display"
+msgstr "X.Org ディスプレイを起動するのに必要なソフトウェア"
+
+#: ../repo_data/components.xml.in.h:22
+msgid "X.Org Server"
+msgstr "X.Org サーバ"
+
+#: ../repo_data/components.xml.in.h:23
+msgid "Core server of the X Window System"
+msgstr "X Window System の主要サーバ"
+
+#: ../repo_data/components.xml.in.h:24
+msgid "X.Org Drivers"
+msgstr "X.Org ドライバー"
+
+#: ../repo_data/components.xml.in.h:25
+msgid "Drivers required to use the X Window System"
+msgstr "X Window System を使用するために必要な各種ドライバ"
+
+#: ../repo_data/components.xml.in.h:26
+msgid "Networking Base"
+msgstr "ネットワーク・ベース"
+
+#: ../repo_data/components.xml.in.h:27
+msgid "Email clients"
+msgstr "電子メールクライアント"
+
+#: ../repo_data/components.xml.in.h:28
+msgid "IRC clients"
+msgstr "IRC クライアント"
+
+#: ../repo_data/components.xml.in.h:29
+msgid "Instant messaging"
+msgstr "インスタント・メッセージ"
+
+#: ../repo_data/components.xml.in.h:30
+msgid "News and RSS readers"
+msgstr "ニュースおよび RSS リーダー"
+
+#: ../repo_data/components.xml.in.h:31
+msgid "Remote management software"
+msgstr "リモート管理ソフトウェア"
+
+#: ../repo_data/components.xml.in.h:32
+msgid "Web applications"
+msgstr "ウェブアプリケーション"
+
+#: ../repo_data/components.xml.in.h:33
+msgid "Web browsers"
+msgstr "ウェブブラウザ"
+
+#: ../repo_data/components.xml.in.h:34
+msgid "Networking utilities"
+msgstr "ネットワーク・ユーティリティ"
+
+#: ../repo_data/components.xml.in.h:35
+msgid "Download managers"
+msgstr "ダウンロードマネージャ"
+
+#: ../repo_data/components.xml.in.h:36
+msgid "Networking CLI Clients"
+msgstr "ネットワーク CLI クライアント"
+
+#: ../repo_data/components.xml.in.h:37
+msgid "Kernel Images"
+msgstr "カーネルイメージ"
+
+#: ../repo_data/components.xml.in.h:38
+msgid "Kernel Development"
+msgstr "カーネル開発"
+
+#: ../repo_data/components.xml.in.h:39
+msgid "Text Editors"
+msgstr "テキストエディタ"
+
+#: ../repo_data/components.xml.in.h:40
+msgid "Simple and advanced text editors"
+msgstr "シンプルで高機能なテキストエディタ"
+
+#: ../repo_data/components.xml.in.h:41 ../repo_data/groups.xml.in.h:5
+msgid "Office Software"
+msgstr "オフィスソフト"
+
+#: ../repo_data/components.xml.in.h:42
+msgid "Office software"
+msgstr "オフィスソフト"
+
+#: ../repo_data/components.xml.in.h:43
+msgid "Financial Software"
+msgstr "財務ソフトウェア"
+
+#: ../repo_data/components.xml.in.h:44
+msgid "Mathematics-Oriented Software"
+msgstr "数学指向のソフトウェア"
+
+#: ../repo_data/components.xml.in.h:45
+msgid "Note-Taking Software"
+msgstr "メモ作成ソフトウェア"
+
+#: ../repo_data/components.xml.in.h:46
+msgid "Scientific Software"
+msgstr "科学用ソフトウェア"
+
+#: ../repo_data/components.xml.in.h:47
+msgid "Software aimed at various scientific fields."
+msgstr "さまざまな科学分野を対象としたソフトウェアです。"
+
+#: ../repo_data/components.xml.in.h:48
+msgid "E-book and PDF Viewing Software"
+msgstr "電子書籍および PDF 閲覧ソフトウェア"
+
+#: ../repo_data/components.xml.in.h:49
+msgid "Programming"
+msgstr "プログラミング"
+
+#: ../repo_data/components.xml.in.h:50
+msgid "Software related to programming"
+msgstr "プログラミング関連のソフトウェア"
+
+#: ../repo_data/components.xml.in.h:51
+msgid "Development files"
+msgstr "開発用ファイル"
+
+#: ../repo_data/components.xml.in.h:52
+msgid "Integrated Developer Environments"
+msgstr "統合開発環境"
+
+#: ../repo_data/components.xml.in.h:53
+msgid "Development tools"
+msgstr "開発用ツール"
+
+#: ../repo_data/components.xml.in.h:54
+msgid "Haskell libraries"
+msgstr "Haskell ライブラリ"
+
+#: ../repo_data/components.xml.in.h:55
+msgid "Python modules"
+msgstr "Python モジュール"
+
+#: ../repo_data/components.xml.in.h:56
+msgid "Perl modules"
+msgstr "Perl モジュール"
+
+#: ../repo_data/components.xml.in.h:57
+msgid "Java modules and libraries"
+msgstr "Java のモジュールとライブラリ"
+
+#: ../repo_data/components.xml.in.h:58
+msgid "Programming libraries"
+msgstr "プログラミング・ライブラリ"
+
+#: ../repo_data/components.xml.in.h:59
+msgid "Database clients and servers"
+msgstr "データベースのクライアントとサーバ"
+
+#: ../repo_data/components.xml.in.h:60
+msgid "Desktop Software"
+msgstr "デスクトップソフトウェア"
+
+#: ../repo_data/components.xml.in.h:61
+msgid "Desktop specific software"
+msgstr "デスクトップ関連のソフトウェア"
+
+#: ../repo_data/components.xml.in.h:62
+msgid "General Multimedia Software"
+msgstr "マルチメディア用の汎用ソフトウェア"
+
+#: ../repo_data/components.xml.in.h:63
+msgid "Graphics"
+msgstr "グラフィックス"
+
+#: ../repo_data/components.xml.in.h:64
+msgid "Graphics Manipulation Software"
+msgstr "グラフィックス操作用ソフトウェア"
+
+#: ../repo_data/components.xml.in.h:65
+msgid "Multimedia Codecs"
+msgstr "マルチメディア・コーデック"
+
+#: ../repo_data/components.xml.in.h:66
+msgid "Multimedia Codecs and Format Support"
+msgstr "マルチメディア用のコーデックとフォーマットのサポート"
+
+#: ../repo_data/components.xml.in.h:67
+msgid "Video Software"
+msgstr "ビデオソフトウェア"
+
+#: ../repo_data/components.xml.in.h:68
+msgid "Audio Software"
+msgstr "オーディオソフトウェア"
+
+#: ../repo_data/components.xml.in.h:69
+msgid "Multimedia Libraries"
+msgstr "マルチメディア・ライブラリ"
+
+#: ../repo_data/components.xml.in.h:70
+msgid "GStreamer Runtime"
+msgstr "GStreamer ランタイム"
+
+#: ../repo_data/components.xml.in.h:71
+msgid "GStreamer Runtime &amp; Support Libraries"
+msgstr "GStreamer ランタイム & サポートライブラリ"
+
+#: ../repo_data/components.xml.in.h:72
+msgid "Desktop Libraries"
+msgstr "デスクトップ・ライブラリ"
+
+#: ../repo_data/components.xml.in.h:73
+msgid "Common libraries required for a desktop"
+msgstr "デスクトップに必要な共通ライブラリ"
+
+#: ../repo_data/components.xml.in.h:74
+msgid "Desktop Theming"
+msgstr "デスクトップのテーマ設定"
+
+#: ../repo_data/components.xml.in.h:75
+msgid "Themes to enhance the desktop"
+msgstr "デスクトップを向上させるための各種テーマ"
+
+#: ../repo_data/components.xml.in.h:76
+msgid "Desktop Fonts"
+msgstr "デスクトップ用のフォント"
+
+#: ../repo_data/components.xml.in.h:77
+msgid "Fonts to enhance the desktop"
+msgstr "デスクトップを強化するフォント"
+
+#: ../repo_data/components.xml.in.h:78
+msgid "Qt Runtime Libraries"
+msgstr "Qt ランタイムライブラリ"
+
+#: ../repo_data/components.xml.in.h:79
+msgid "GTK Runtime Libraries"
+msgstr "GTK ランタイムライブラリ"
+
+#: ../repo_data/components.xml.in.h:80
+msgid "Budgie Desktop"
+msgstr "Budgie デスクトップ"
+
+#: ../repo_data/components.xml.in.h:81
+msgid "Elements of the Solus Budgie Experience"
+msgstr "Solus Budgie 体験の基本部分"
+
+#: ../repo_data/components.xml.in.h:82
+msgid "GNOME Desktop"
+msgstr "GNOME デスクトップ"
+
+#: ../repo_data/components.xml.in.h:83
+msgid "MATE Desktop"
+msgstr "MATE デスクトップ"
+
+#: ../repo_data/components.xml.in.h:84
+msgid "i3 Desktop"
+msgstr "i3 デスクトップ"
+
+#: ../repo_data/components.xml.in.h:85
+msgid "GNOME Desktop - Core System"
+msgstr "GNOME デスクトップ - 基本システム"
+
+#: ../repo_data/components.xml.in.h:86
+msgid "GNOME Documentation Tools"
+msgstr "GNOME 文書ツール"
+
+#: ../repo_data/components.xml.in.h:87
+msgid "Documentation tools for GNOME"
+msgstr "GNOME 用文書ツール"
+
+#: ../repo_data/components.xml.in.h:88
+msgid "KDE Desktop"
+msgstr "KDE デスクトップ"
+
+#: ../repo_data/components.xml.in.h:89
+msgid "KDE Desktop - Core System"
+msgstr "KDE デスクトップ - 基本システム"
+
+#: ../repo_data/components.xml.in.h:90
+msgid "Desktop Core Components"
+msgstr "デスクトップの基本コンポーネント"
+
+#: ../repo_data/components.xml.in.h:91
+msgid "Core components for desktop systems"
+msgstr "デスクトップシステム用の基本コンポーネント"
+
+#: ../repo_data/components.xml.in.h:92
+msgid "Security applications"
+msgstr "セキュリティ関係アプリケーション"
+
+#: ../repo_data/components.xml.in.h:93
+msgid "Cryptographic utilities"
+msgstr "暗号化ユーティリティ"
+
+#: ../repo_data/components.xml.in.h:94
+msgid "Cryptographic utilities and runtimes"
+msgstr "暗号化ユーティリティとランタイム"
+
+#: ../repo_data/components.xml.in.h:95
+msgid "Security-oriented libraries"
+msgstr "セキュリティ指向のライブラリ"
+
+#: ../repo_data/components.xml.in.h:96
+msgid "Main games collection"
+msgstr "メインゲーム集"
+
+#: ../repo_data/components.xml.in.h:97
+msgid "Main games"
+msgstr "メインゲーム"
+
+#: ../repo_data/components.xml.in.h:98
+msgid "Action Games"
+msgstr "アクションゲーム"
+
+#: ../repo_data/components.xml.in.h:99
+msgid "Arcade Games"
+msgstr "アーケードゲーム"
+
+#: ../repo_data/components.xml.in.h:100
+msgid "Card Games"
+msgstr "カードゲーム"
+
+#: ../repo_data/components.xml.in.h:101
+msgid "Console Emulators"
+msgstr "端末エミュレータ"
+
+#: ../repo_data/components.xml.in.h:102
+msgid "Massive Multiplayer Online Games"
+msgstr "大規模多人数同時参加型オンラインゲーム"
+
+#: ../repo_data/components.xml.in.h:103
+msgid "Platformer Games"
+msgstr "プラットフォーム・ゲーム"
+
+#: ../repo_data/components.xml.in.h:104
+msgid "Puzzle Games"
+msgstr "パズルゲーム"
+
+#: ../repo_data/components.xml.in.h:105
+msgid "Role-playing Games"
+msgstr "ロールプレイゲーム"
+
+#: ../repo_data/components.xml.in.h:106
+msgid "Strategy Games"
+msgstr "戦略ゲーム"
+
+#: ../repo_data/distribution.xml.in.h:1
+msgid "Solus Repository"
+msgstr "Solus リポジトリ"
+
+#: ../repo_data/groups.xml.in.h:1
+msgid "System Software"
+msgstr "システム用ソフトウェア"
+
+#: ../repo_data/groups.xml.in.h:2
+msgid "Internet Software"
+msgstr "インターネット用ソフトウェア"
+
+#: ../repo_data/groups.xml.in.h:3
+msgid "Multimedia &amp; Graphics"
+msgstr "マルチメディアとグラフィック"
+
+#: ../repo_data/groups.xml.in.h:4
+msgid "Gaming on Solus"
+msgstr "Solus でゲーム"
+
+#: ../repo_data/groups.xml.in.h:6
+msgid "Programming Languages &amp; Tools"
+msgstr "プログラム言語とツール"
+
+#: ../repo_data/groups.xml.in.h:7
+msgid "Desktop Software &amp; Theming"
+msgstr "デスクトップ用ソフトウェアとテーマ"
+
+#: ../repo_data/groups.xml.in.h:8
+msgid "Security Software"
+msgstr "セキュリティ用ソフトウェア"
+
+#: ../solus_sc/application.py:84
+msgid "Open up the updates view of the application"
+msgstr "アプリケーションの更新ビューを開く"
+
+#. Quirky loading message
+#: ../solus_sc/available_view.py:38
+msgid "Switching to the B-side of the cassette…"
+msgstr "カセットを B 面へ切替中..."
+
+#. The number (more than one) of package operations to be performed
+#: ../solus_sc/basket.py:149
+msgid "{} operations pending"
+msgstr "{} 操作を保留"
+
+#: ../solus_sc/basket.py:153
+msgid " - This may take <b>some time!</b>"
+msgstr " - これは<b>時間を要する</b>場合があります！"
+
+#. Only one package operation to be performed
+#: ../solus_sc/basket.py:158
+msgid "One operation pending"
+msgstr "1 個の操作を保留"
+
+#. "Updating Solus repository" (named repo)
+#: ../solus_sc/basket.py:203
+#, python-format
+msgid "Updating %s repository"
+msgstr "%s リポジトリを更新中"
+
+#. "Extracting 1 of 10: bash"
+#: ../solus_sc/basket.py:207
+msgid "Extracting {} of {}: {}"
+msgstr "展開中 {} / {}: {}"
+
+#. "Configuring 1 of 10: bash"
+#: ../solus_sc/basket.py:213
+msgid "Configuring {} of {}: {}"
+msgstr "設定中 {} / {}: {}"
+
+#. "Installing 1 of 10: bash"
+#: ../solus_sc/basket.py:219
+msgid "Installing {} of {}: {}"
+msgstr "導入中 {} / {}: {}"
+
+#. "Removing (1 of 10): bash"
+#: ../solus_sc/basket.py:222
+msgid "Removing {} of {}: {}"
+msgstr "削除中 {} / {}: {}"
+
+#. "Upgraded 1 of 10: bash"
+#: ../solus_sc/basket.py:231
+msgid "Upgraded {} of {}: {}"
+msgstr "更新中 {} / {}: {}"
+
+#. "Removed 1 of 10: bash"
+#. "Installed 1 of 10: bash"
+#: ../solus_sc/basket.py:234 ../solus_sc/basket.py:237
+msgid "Removed {} of {}: {}"
+msgstr "削除済 {} / {}: {}"
+
+#. "Downloading eopkg-index.xml.xz (10kb/s)
+#: ../solus_sc/basket.py:264
+msgid "Downloading {} ({})"
+msgstr "ダウンロード中 {} ({})"
+
+#. "Downloading 1 of 10: bash (10kb/s)
+#: ../solus_sc/basket.py:268
+msgid "Downloading {} of {}: {} ({})"
+msgstr "ダウンロード中 {} / {}: {} ({})"
+
+#. print args
+#. Downloading eopkg-index.xml.sha1sum
+#: ../solus_sc/basket.py:278
+msgid "Downloading {}"
+msgstr "ダウンロード中 {}"
+
+#: ../solus_sc/basket.py:323
+msgid "The following dependencies need to be installed to continue"
+msgstr "作業を継続するためには次の依存関係をインストールする必要があります"
+
+#: ../solus_sc/basket.py:333
+msgid "Installation confirmation"
+msgstr "インストールの確認"
+
+#: ../solus_sc/basket.py:336
+msgid "The following dependencies need to be removed to continue"
+msgstr "作業を継続するためには次の依存関係を削除する必要があります"
+
+#: ../solus_sc/basket.py:337
+msgid "Removal confirmation"
+msgstr "削除の確認"
+
+#: ../solus_sc/basket.py:340
+msgid "The following dependencies need to be updated to continue"
+msgstr "作業を継続するためには次の依存関係を更新する必要があります"
+
+#: ../solus_sc/basket.py:341
+msgid "Update confirmation"
+msgstr "更新の確認"
+
+#: ../solus_sc/basket.py:368
+msgid "Cancel"
+msgstr "キャンセル"
+
+#. Main action buttons
+#: ../solus_sc/basket.py:370 ../solus_sc/details.py:224
+#: ../solus_sc/thirdparty.py:186
+msgid "Install"
+msgstr "インストール"
+
+#: ../solus_sc/basket.py:372
+msgid "Update"
+msgstr "更新"
+
+#. Remove button
+#: ../solus_sc/basket.py:377 ../solus_sc/details.py:234
+msgid "Remove"
+msgstr "削除"
+
+#: ../solus_sc/changelog.py:119
+msgid "Standard Update"
+msgstr "標準アップデート"
+
+#: ../solus_sc/changelog.py:122
+msgid "Security Update"
+msgstr "セキュリティ更新"
+
+#: ../solus_sc/details.py:209
+msgid "Report issues"
+msgstr "問題を報告する"
+
+#: ../solus_sc/details.py:217
+msgid "Visit Website"
+msgstr "ウェブサイトを訪問"
+
+#: ../solus_sc/details.py:314 ../solus_sc/updates_view.py:296
+msgid "Details"
+msgstr "詳細"
+
+#: ../solus_sc/details.py:382
+msgid "Developers"
+msgstr "開発者"
+
+#: ../solus_sc/details.py:397
+msgid "Version"
+msgstr "版"
+
+#. Size of the package when installed locally
+#: ../solus_sc/details.py:409
+msgid "Installed size"
+msgstr "インストール後のサイズ"
+
+#. Donation button launches website to donate to authors
+#: ../solus_sc/details.py:421
+msgid "Donate"
+msgstr "寄付"
+
+#: ../solus_sc/details.py:435
+msgid "Changelog"
+msgstr "変更ログ"
+
+#: ../solus_sc/details.py:443
+msgid "License"
+msgstr "ライセンス"
+
+#: ../solus_sc/details.py:448
+msgid "Report an invalid or missing license"
+msgstr "ライセンスが無効または不明なことを報告する"
+
+#: ../solus_sc/details.py:450
+msgid ""
+"This selection is available in accordance with the terms set in the "
+"following license(s):"
+msgstr "この選択は、次のライセンスで設定されている条件に従って使用できます。"
+
+#: ../solus_sc/details.py:518
+msgid "Cannot remove core system software"
+msgstr "基本的なシステムソフトウェアは削除できません"
+
+#. "5 categories" - the number of categories within each group
+#: ../solus_sc/groups.py:72
+msgid "{} categories"
+msgstr "{} カテゴリ"
+
+#: ../solus_sc/imagewidget.py:86
+msgid "No screenshots available"
+msgstr "利用可能なスクリーンショットはありません"
+
+#. Window title
+#: ../solus_sc/main_window.py:162
+msgid "Software Center"
+msgstr "ソフトウェアセンター"
+
+#. Main view, primary view, when opening the software center
+#: ../solus_sc/main_window.py:207 ../solus_sc/sidebar.py:65
+msgid "Home"
+msgstr "ホーム"
+
+#. The page where updates are display
+#: ../solus_sc/main_window.py:210 ../solus_sc/sidebar.py:66
+msgid "Updates"
+msgstr "更新"
+
+#. This page shows the locally instaleld items
+#: ../solus_sc/main_window.py:216 ../solus_sc/sidebar.py:67
+msgid "Installed"
+msgstr "インストール"
+
+#. Software made available from outside the Solus software repos
+#: ../solus_sc/main_window.py:220 ../solus_sc/sidebar.py:68
+msgid "Third Party"
+msgstr "サードパーティ"
+
+#. The search page
+#: ../solus_sc/main_window.py:225 ../solus_sc/sidebar.py:69
+msgid "Search"
+msgstr "検索"
+
+#. The settings page
+#: ../solus_sc/main_window.py:229 ../solus_sc/sidebar.py:70
+msgid "Settings"
+msgstr "設定"
+
+#: ../solus_sc/package_view.py:41
+msgid "Solving the Paradox Of Choice"
+msgstr "選択時の矛盾を解決しています"
+
+#. self.spinner.start()
+#. "Witty" loading page, loading search results
+#: ../solus_sc/search_results.py:41
+msgid "Concentrating really hard"
+msgstr "現在とても忙しく動作しています"
+
+#: ../solus_sc/search_results.py:62
+msgid "Type a query to get started"
+msgstr "クエリを入力し作業を開始します"
+
+#: ../solus_sc/search_results.py:81
+msgid "No results found"
+msgstr "結果が見つかりません"
+
+#. Check for updates every hour
+#: ../solus_sc/settings_view.py:75
+msgid "Every hour"
+msgstr "毎時"
+
+#. Check for updates once per day
+#: ../solus_sc/settings_view.py:77
+msgid "Daily"
+msgstr "毎日"
+
+#. Check for updates once a week
+#: ../solus_sc/settings_view.py:79
+msgid "Weekly"
+msgstr "毎週"
+
+#. Notify of all updates
+#: ../solus_sc/settings_view.py:94
+msgid "All updates"
+msgstr "すべて更新"
+
+#. Notify only of security updates
+#: ../solus_sc/settings_view.py:96
+msgid "Security updates only"
+msgstr "セキュリティ更新のみ"
+
+#. Notify of security and core system updates ("mandatory")
+#: ../solus_sc/settings_view.py:98
+msgid "Security & core updates"
+msgstr "セキュリティと基本更新のみ"
+
+#: ../solus_sc/thirdparty.py:184 ../solus_sc/updates_view.py:192
+#: ../solus_sc/updates_view.py:194 ../solus_sc/updates_view.py:288
+msgid "Check for updates"
+msgstr "更新を確認"
+
+#. Title of dialog displaying the details of a given update
+#: ../solus_sc/updates_view.py:33
+msgid "Update Details"
+msgstr "更新の詳細"
+
+#: ../solus_sc/updates_view.py:47
+msgid "Not installed"
+msgstr "インストールしない"
+
+#: ../solus_sc/updates_view.py:87
+msgid "Discombobulating update matrix"
+msgstr "更新内容に混乱しています"
+
+#: ../solus_sc/updates_view.py:110
+msgid "Please check back later, updates are now applying"
+msgstr "後ほど確認して下さい。アップデートが適用されます"
+
+#: ../solus_sc/updates_view.py:207
+msgid "Software is up to date"
+msgstr "ソフトウェアは最新です"
+
+#. Selection label
+#. No updates currently selected for installation
+#: ../solus_sc/updates_view.py:273
+msgid "0 items selected"
+msgstr "0 項目が選択されています"
+
+#: ../solus_sc/updates_view.py:287
+msgid "Check new updates"
+msgstr "新たな更新を確認"
+
+#. Apply the updates
+#: ../solus_sc/updates_view.py:302 ../solus_sc/updates_view.py:303
+msgid "Update Selected"
+msgstr "選択項目を更新"
+
+#. "2 of 10 updates selected"
+#: ../solus_sc/updates_view.py:538
+msgid "{} of {} updates selected"
+msgstr "{} / {} 更新パッケージの選択"
+
+#. "2 of 10 updates selected (20.05MB to download)"
+#: ../solus_sc/updates_view.py:545
+msgid "{} of {} updates selected ({} to download)"
+msgstr "{} / {} 更新パッケージの選択 ({} ダウンロード)"
+
+#: ../solus_update/application.py:301
+msgid "Security updates available"
+msgstr "セキュリティ更新が有効です"
+
+#: ../solus_update/application.py:302
+msgid ""
+"Update at your earliest convenience to ensure continued security of your "
+"device"
+msgstr "継続的にセキュリティを確保するため早めに更新を行って下さい"
+
+#: ../solus_update/application.py:306
+msgid "Software updates available"
+msgstr "ソフトウェアの更新が可能です"
+
+#: ../solus_update/application.py:307
+msgid "New software updates are available for your device"
+msgstr "新しいソフトウェアのアップグレードが有効です"
+
+#: ../solus_update/application.py:312
+msgid "Open Software Center"
+msgstr "ソフトウェアセンターを開く"
