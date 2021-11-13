@@ -3,9 +3,5 @@ v.0.4.0
 - Update FOSS & Linux news page.
 - Add installation logs for Fedora Linux 34.
 - Add tips for splash screen options on Debian 11.
-- Add tips using Win32-Loader for Debian.
-
----------------------------
-Add page by Demicaza:
-"What killed Linux Desktop?"
-
+- Add tips using Win32-Loader for multiboot page.
+- 
