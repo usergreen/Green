@@ -1,5 +1,8 @@
+The following is a draft for upcomming release.
+
 v.0.4.0
-- Fixed many internal links.
+- Reviewed styles of respective pages.
+- Fixed wrong links to many images.
 - Update FOSS & Linux news page.
 - Add installation logs for Fedora Linux 34.
 - Add tips for splash screen options on Debian 11.
