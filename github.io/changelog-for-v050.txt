@@ -1,0 +1,7 @@
+A draft for future release of v050.
+
+- Fix more links for images to several pages.
+- Review style for more pages.
+- Cleanup html sources of some pages.
+- Add contents for foss_news_2021.html
+
