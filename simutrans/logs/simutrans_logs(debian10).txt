@@ -1,0 +1,61 @@
+root@debian:/home/user# apt install simutrans-uni
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています                
+状態情報を読み取っています... 完了
+以下の追加パッケージがインストールされます:
+  fluid-soundfont-gm libopusfile0 libsdl2-mixer-2.0-0 simutrans-uni-data
+  simutrans-uni-pak64 simutrans-uni-pak64-food
+提案パッケージ:
+  fluid-soundfont-gs fluidsynth timidity
+以下のパッケージが新たにインストールされます:
+  fluid-soundfont-gm libopusfile0 libsdl2-mixer-2.0-0 simutrans-uni
+  simutrans-uni-data simutrans-uni-pak64 simutrans-uni-pak64-food
+アップグレード: 0 個、新規インストール: 7 個、削除: 0 個、保留: 0 個。
+127 MB のアーカイブを取得する必要があります。
+この操作後に追加で 181 MB のディスク容量が消費されます。
+続行しますか? [Y/n] 
+
+root@debian:/home/user# apt install simutrans-uni-pak128
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています                
+状態情報を読み取っています... 完了
+以下のパッケージが新たにインストールされます:
+  simutrans-uni-pak128
+アップグレード: 0 個、新規インストール: 1 個、削除: 0 個、保留: 0 個。
+44.0 MB のアーカイブを取得する必要があります。
+この操作後に追加で 433 MB のディスク容量が消費されます。
+
+root@debian:/home/user# apt install simutrans-uni-pak128.german
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています                
+状態情報を読み取っています... 完了
+以下のパッケージが新たにインストールされます:
+  simutrans-uni-pak128.german
+アップグレード: 0 個、新規インストール: 1 個、削除: 0 個、保留: 0 個。
+229 MB のアーカイブを取得する必要があります。
+この操作後に追加で 486 MB のディスク容量が消費されます。
+
+root@debian:/home/user# apt install simutrans-uni-sdl2
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています                
+状態情報を読み取っています... 完了
+以下のパッケージが新たにインストールされます:
+  simutrans-uni-sdl2
+アップグレード: 0 個、新規インストール: 1 個、削除: 0 個、保留: 0 個。
+1,951 kB のアーカイブを取得する必要があります。
+この操作後に追加で 6,648 kB のディスク容量が消費されます。
+取得:1 https://simutrans-germany.com/simutrans/linux-package/deb/debian lenny/contrib amd64 simutrans-uni-sdl2 amd64 122.0-3 [1,951 kB]
+1,951 kB を 12秒 で取得しました (168 kB/s)                                     
+以前に未選択のパッケージ simutrans-uni-sdl2 を選択しています。
+(データベースを読み込んでいます ... 現在 214185 個のファイルとディレクトリがインストールされています。)
+.../simutrans-uni-sdl2_122.0-3_amd64.deb を展開する準備をしています ...
+simutrans-uni-sdl2 (122.0-3) を展開しています...
+simutrans-uni-sdl2 (122.0-3) を設定しています ...
+mime-support (3.62) のトリガを処理しています ...
+bamfdaemon (0.5.4-1) のトリガを処理しています ...
+Rebuilding /usr/share/applications/bamf-2.index...
+desktop-file-utils (0.23-4) のトリガを処理しています ...
+root@debian:/home/user# exit
+
+root@debian:/home/user# apt remove simutrans-uni-sdl2
+

@@ -1,0 +1,32 @@
+Simutrans 公式サイトから直接ダウンロードした場合は、get_pak.sh を利用してパックセットをインストールすることも可能です。
+Linux ディストリビューションの配布パッケージではなく開発元のサイトから自動的にダウンロードして取得し、インストールまで実行します。
+
+右クリック（コンテキストメニュー）の「開く」＞「端末内で実行する」
+
+-- Choose at least one of these paks --
+1) pak64-122-0
+2) pak64.german_0-122-0-0-2_full
+3) pak64.japan-120-0-1
+4) pak.nippon-v0.4.0
+5) pakHAJO_0-102-2-2
+6) pak96.comic-0.4.10-plus
+7) pak128
+8) pak128.Britain.1.18-120-3
+9) PAK128.german_2.0_for_ST_122.0
+10) pak192.comic.0.6.RC1
+11) pak32.comic_102-0
+12) pak64.Contrast_910
+13) PakHD_v04B_100-0
+14) pak128.japan.120.0
+15) pak64.scifi_112.x_v0.2
+16) pak48-excentrique_v018
+17) pak64.ho-scale-latest
+Which paks to install? (enter number or (i) to install or (x) to exit)4
+adding pak.nippon-v0.4.0
+Which paks to install? (enter number or (i) to install or (x) to exit)i
+
+You will install now
+4) pak.nippon-v0.4.0
+into directory '/usr/local/bin/simutrans'
+Is this correct? (y/n)
+

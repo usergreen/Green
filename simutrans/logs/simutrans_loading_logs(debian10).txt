@@ -1,0 +1,151 @@
+user@debian:~$ /usr/games/simutrans
+Use work dir /usr/share/games/simutrans/
+Reading low level config data ...
+parse_simuconf() at config/simuconf.tab: Reading simuconf.tab successful!
+SDL_driver=x11, hw_available=0, video_mem=0, blit_sw=0, bpp=32, bytes=4
+Screen Flags: requested=10, actual=10
+dr_os_open(SDL): SDL realized screen size width=704, height=560 (requested w=704, h=560)
+Loading font 'font/prop.fnt'
+font/prop.fnt successfully loaded as old format prop font!
+Init done.
+parse_colours() at config/simuconf.tab: Reading simuconf.tab successful!
+Loading BDF font 'font/cyr.bdf'
+reading addon object data failed (disabling).
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Error: Cannot open 'font/wenquanyi_9pt.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/m+10r.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Error: Cannot open 'font/wenquanyi_9pt.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/cyr.bdf'
+Loading BDF font 'font/m+10r.bdf'
+Loading BDF font 'font/m+10r.bdf'
+  Reading MIDI file '/usr/share/games/simutrans/music/01-Simutrans-Main-Theme.mid' - Main Theme
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/02-Gotta-catch-that-train.mid' - Gotta catch that train
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/03-Sunday-drivers.mid' - Sunday drivers
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/04-Simutrans-B-Theme.mid' - Simutrans B Theme
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/05-Boring-afternoon.mid' - Boring Afternoon
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/06-A-busy-day-at-the-depot.mid' - A busy day at the depot
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/07-Transport-chaos.mid' - Transport Chaos
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/08-The-journey-home.mid' - The Journey Home
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/09-Simupolitan-Swing.mid' - simupolitan swing
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/10-Easy-driving.mid' - easy driving
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/11-Stucked-Convoi.mid' - stucked convoi
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/12-Steamin-across-the-prairies.mid' - Steamin' across the prairies
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/13-Stephenson-blues.mid' - Stephenson blues
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/14-Last-journey-of-the-Niagara.mid' - Last journey of the Niagara
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/15-The-Wayside-Blues.mid' - The Wayside Blues
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/16-Midnight-Express2.mid' - Midnight Express2
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/17-The-Benevolent-Dictators-March.mid' - The Benevolent Dictators March
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/18-Ride-that-train.mid' - Ride that train
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/19-Rockin-trucker.mid' - Rockin` trucker
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/20-Last-Trip.mid' - Last Trip
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/21-Dusty-Eyes.mid' - Dusty Eyes
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/22-Variable-Journeys.mid' - Variable Journeys
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/23-Something-for-Silver-Sand.mid' - Something for Silver Sand
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/24-needlessly-striking.mid' - needlessly striking
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/25-Float-on-by.mid' - Float on by
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/26-Tantalizingly-Unusual.mid' - Tantalizingly Unusual
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/27-March-Winds.mid' - March Winds
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/28-Road-to-Warm-Places.mid' - Road to Warm Places
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/29-Runaway.mid' - Runaway
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/30-On-the-waterfront.mid' - On the waterfront
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/31-Courtenay-Bridge.mid' - Courtenay Bridge
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/32-incidental-skies.mid' - incidental skies
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/33-Journey-to-times-gone-by.mid' - Journey to times gone by
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/34-flyingaway.mid' - flying away
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/35-deep-ride.mid' - deep ride
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/36-faded-things.mid' - faded things
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/37-inevitably-engrossed.mid' - inevitably engrossed
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/38-positive-thrill.mid' - positive thrill
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/39-bangin-mover.mid' - bangin mover
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/40-alternative.mid' - alternative
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/41-Libertador.mid' - Libertador
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/42-Stranger-Echoes.mid' - Stranger Echoes (Multitrack slow)
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/43-Driving-on-the-midnight-highway.mid' - Driving on the Midnight Highway
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/44-Above-the-sky.mid' - Above the sky
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/45-Misty-Forest.mid' - Misty Forest
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/46-House-in-the-station.mid' - House in the station
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/47-Salty-Breeze.mid' - Salty Breeze
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/48-Techno-movement.mid' - Techno-movement
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+  Reading MIDI file '/usr/share/games/simutrans/music/49-Last-Sunday.mid' - Last Sunday
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+fluidsynth: warning: Failed to pin the sample data to RAM; swapping is possible.
+Calculating textures ...done
+Distributing 1 tourist attractions ...
+

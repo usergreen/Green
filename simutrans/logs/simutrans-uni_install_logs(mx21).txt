@@ -1,0 +1,48 @@
+root@mx1:/home/demo/ダウンロード# apt-key add PublicKey
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+OK
+
+root@mx1:/home/demo/ダウンロード# apt update
+ヒット:1 http://deb.debian.org/debian bullseye-updates InRelease
+ヒット:2 http://deb.debian.org/debian bullseye InRelease                                           
+ヒット:3 http://security.debian.org/debian-security bullseye-security InRelease                    
+ヒット:4 https://ftp.yz.yamagata-u.ac.jp/pub/Linux/MX-Linux-Packages/mx/repo bullseye InRelease    
+取得:5 https://simutrans-germany.com/simutrans/linux-package/deb/debian lenny InRelease [2,558 B]
+取得:6 https://simutrans-germany.com/simutrans/linux-package/deb/debian lenny/contrib i386 Packages [2,789 B]
+取得:7 https://simutrans-germany.com/simutrans/linux-package/deb/debian lenny/contrib amd64 Packages [3,608 B]
+
+root@mx1:/home/demo/ダウンロード# apt install simutrans-uni
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています... 完了        
+状態情報を読み取っています... 完了        
+以下の追加パッケージがインストールされます:
+  fluid-soundfont-gm libopusfile0 libsdl2-mixer-2.0-0 simutrans-uni-data simutrans-uni-pak64
+提案パッケージ:
+  fluid-soundfont-gs fluidsynth timidity
+推奨パッケージ:
+  simutrans-uni-pak64-food
+以下のパッケージが新たにインストールされます:
+  fluid-soundfont-gm libopusfile0 libsdl2-mixer-2.0-0 simutrans-uni simutrans-uni-data
+  simutrans-uni-pak64
+アップグレード: 0 個、新規インストール: 6 個、削除: 0 個、保留: 0 個。
+126 MB のアーカイブを取得する必要があります。
+この操作後に追加で 181 MB のディスク容量が消費されます。
+続行しますか? [Y/n] 
+
+root@mx1:/home/demo# apt install simutrans-uni-pak128
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています... 完了        
+状態情報を読み取っています... 完了        
+以下のパッケージが新たにインストールされます:
+  simutrans-uni-pak128
+アップグレード: 0 個、新規インストール: 1 個、削除: 0 個、保留: 0 個。
+44.0 MB のアーカイブを取得する必要があります。
+この操作後に追加で 433 MB のディスク容量が消費されます。
+取得:1 https://simutrans-germany.com/simutrans/linux-package/deb/debian lenny/contrib amd64 simutrans-uni-pak128 all 2.8.1-2 [44.0 MB]
+
+--------------
+[MEMO]
+The above are installation logs on MX Linux 21.
+Simutrans-uni is installed in /usr/local/bin/simutrans/ directory by the above way.
+Therefore simutrans provied by debian does not conflict with simutrans-uni installed.
+
