@@ -1,3 +1,12 @@
+Add "Simutrans Universal repository" to /etc/apt/sources.list file, as follows:
+
+#Simutrans Universal repo
+deb https://simutrans-germany.com/simutrans/linux-package/deb/debian lenny contrib
+
+Download "Public Key" from:
+https://simutrans-germany.com/simutrans/linux-package/deb/PublicKeylink-external
+
+Import public key:
 root@mx1:/home/demo/ダウンロード# apt-key add PublicKey
 Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
 OK
