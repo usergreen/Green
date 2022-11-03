@@ -1,0 +1,38 @@
+
+root@debian:/home/user# apt install uim-anthy
+
+root@debian:/home/user# apt install uim-anthy uim im-config zenity kasumi uim-gtk2.0 uim-gtk3 uim-qt5 uim-xim uim-fep fonts-vlgothic
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています... 完了        
+状態情報を読み取っています... 完了        
+fonts-vlgothic はすでに最新バージョン (20200720-1) です。
+fonts-vlgothic は手動でインストールしたと設定されました。
+im-config はすでに最新バージョン (0.46-1+deb11u1) です。
+im-config は手動でインストールしたと設定されました。
+uim はすでに最新バージョン (1:1.8.8-9) です。
+uim は手動でインストールしたと設定されました。
+uim-anthy はすでに最新バージョン (1:1.8.8-9) です。
+zenity はすでに最新バージョン (3.32.0-6) です。
+zenity は手動でインストールしたと設定されました。
+以下の追加パッケージがインストールされます:
+  libdouble-conversion3 libmd4c0 libpcre2-16-0 libqt5core5a libqt5dbus5
+  libqt5gui5 libqt5network5 libqt5svg5 libqt5widgets5 libqt5x11extras5
+  libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0
+  libxcb-xinerama0 libxcb-xinput0 libxcb-xkb1 libxkbcommon-x11-0
+  qt5-gtk-platformtheme qttranslations5-l10n uim-gtk2.0-immodule
+  uim-gtk3-immodule uim-qt5-immodule
+提案パッケージ:
+  qt5-image-formats-plugins qtwayland5
+以下のパッケージが新たにインストールされます:
+  kasumi libdouble-conversion3 libmd4c0 libpcre2-16-0 libqt5core5a libqt5dbus5
+  libqt5gui5 libqt5network5 libqt5svg5 libqt5widgets5 libqt5x11extras5
+  libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0
+  libxcb-xinerama0 libxcb-xinput0 libxcb-xkb1 libxkbcommon-x11-0
+  qt5-gtk-platformtheme qttranslations5-l10n uim-fep uim-gtk2.0
+  uim-gtk2.0-immodule uim-gtk3 uim-gtk3-immodule uim-qt5 uim-qt5-immodule
+  uim-xim
+アップグレード: 0 個、新規インストール: 29 個、削除: 0 個、保留: 0 個。
+15.3 MB のアーカイブを取得する必要があります。
+この操作後に追加で 63.3 MB のディスク容量が消費されます。
+続行しますか? [Y/n] 
+

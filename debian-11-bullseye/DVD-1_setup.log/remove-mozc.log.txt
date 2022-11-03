@@ -1,0 +1,35 @@
+root@debian:/home/user# apt purge mozc*
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています... 完了        
+状態情報を読み取っています... 完了        
+注意、glob 'mozc*' のために 'mozc-server' を選択します
+注意、glob 'mozc*' のために 'mozc-utils-gui' を選択します
+注意、glob 'mozc*' のために 'mozc-data' を選択します
+以下のパッケージが自動でインストールされましたが、もう必要とされていません:
+  libabsl20200923 libdouble-conversion3 libmd4c0 libpcre2-16-0 libprotobuf23
+  libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5 libqt5svg5 libqt5widgets5
+  libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0
+  libxcb-xinerama0 libxcb-xinput0 libxcb-xkb1 libxkbcommon-x11-0
+  qt5-gtk-platformtheme qttranslations5-l10n tegaki-zinnia-japanese
+これを削除するには 'apt autoremove' を利用してください。
+以下のパッケージは「削除」されます:
+  mozc-data* mozc-server* mozc-utils-gui* uim-mozc*
+アップグレード: 0 個、新規インストール: 0 個、削除: 4 個、保留: 0 個。
+この操作後に 23.3 MB のディスク容量が解放されます。
+続行しますか? [Y/n] 
+
+
+root@debian:/home/user# apt autoremove
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています... 完了        
+状態情報を読み取っています... 完了        
+以下のパッケージは「削除」されます:
+  libabsl20200923 libdouble-conversion3 libmd4c0 libpcre2-16-0 libprotobuf23
+  libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5 libqt5svg5 libqt5widgets5
+  libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0
+  libxcb-xinerama0 libxcb-xinput0 libxcb-xkb1 libxkbcommon-x11-0
+  qt5-gtk-platformtheme qttranslations5-l10n tegaki-zinnia-japanese
+アップグレード: 0 個、新規インストール: 0 個、削除: 22 個、保留: 0 個。
+この操作後に 92.3 MB のディスク容量が解放されます。
+続行しますか? [Y/n] 
+

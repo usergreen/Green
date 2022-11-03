@@ -1,0 +1,14 @@
+A typical installation of Debian 11 proceeds in the following order. (I drew important samples which might be helpful to users during its installation.)
+
+passwd_user-password_0.png
+passwd_root-password_0.png
+partman-auto_select_disk_0.png
+partman-auto_init_automatically_partition_0.png
+partman_choose_partition_0.png
+mirror_http_mirror_0.png
+apt-setup_use_mirror_0.png
+tasksel_first_1.png
+grub-installer_choose_bootdev_0.png
+grub-installer_only_debian_0.png
+finish-install_reboot_in_progress_0.png
+
