@@ -2,7 +2,7 @@
 - 👀 I’m interested in ...Linux distributions and free and open source projects.
 - 🌱 I’m currently learning ...
 - 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...You can reach me at blog of http://linux-on-the-desktop.sblo.jp/ or Trasifex at https://www.transifex.com/user/profile/usergreen/
+- 📫 How to reach me ...You can reach me at blog of http://linux-on-the-desktop.sblo.jp/ , forrums such as MX Forum  https://forum.mxlinux.org/ or Trasifex at https://www.transifex.com/user/profile/usergreen/
 
 <!---
 usergreen/usergreen is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
