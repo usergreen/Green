@@ -11,6 +11,7 @@ tegaki-recognize - not available for Debian 11
 tegaki-zinnia-japanese
 
 As some packages are missing on Debian 11 (bulleseye), you can NOT install tegaki as follows.
+The following way is available only for Debian 10 (buster) or Debian 9 (stretch).
 
 ---------------------
 $ apt -s install tegaki-recognize tegaki-zinnia-japanese
