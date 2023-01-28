@@ -1,0 +1,57 @@
+How to install and start "tegaki recognize" for Japanese on Debian 10 (buster)
+
+Note:
+
+python-tegaki-gtk - not available for Debian 11
+
+python-tegaki - not available for Debian 11
+
+tegaki-recognize - not available for Debian 11
+
+tegaki-zinnia-japanese
+
+As some packages are missing on Debian 11 (bulleseye), you can NOT install tegaki as follows.
+
+---------------------
+$ apt -s install tegaki-recognize tegaki-zinnia-japanese
+
+root@debian:/home/demo# apt -s install tegaki-recognize tegaki-zinnia-japanese
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libzinnia0 python-cairo python-gtk2 python-numpy python-tegaki
+  python-tegaki-gtk python-zinnia
+Suggested packages:
+  python-gtk2-doc gfortran python-dev python-pytest python-numpy-dbg
+  python-numpy-doc tegaki-zinnia-simplified-chinese
+The following NEW packages will be installed:
+  libzinnia0 python-cairo python-gtk2 python-numpy python-tegaki
+  python-tegaki-gtk python-zinnia tegaki-recognize tegaki-zinnia-japanese
+0 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
+Inst libzinnia0 (0.06-4 Debian:10.13/oldstable [amd64])
+Inst python-cairo (1.16.2-1+b1 Debian:10.13/oldstable [amd64])
+Inst python-numpy (1:1.16.2-1 Debian:10.13/oldstable [amd64])
+Inst python-gtk2 (2.24.0-5.1+b1 Debian:10.13/oldstable [amd64])
+Inst python-zinnia (0.06-4 Debian:10.13/oldstable [amd64])
+Inst python-tegaki (0.3.1-1.1 Debian:10.13/oldstable [all])
+Inst python-tegaki-gtk (0.3.1-1.1 Debian:10.13/oldstable [all])
+Inst tegaki-recognize (0.3.1.2-1 Debian:10.13/oldstable [all])
+Inst tegaki-zinnia-japanese (0.3-1 Debian:10.13/oldstable [all])
+Conf libzinnia0 (0.06-4 Debian:10.13/oldstable [amd64])
+Conf python-cairo (1.16.2-1+b1 Debian:10.13/oldstable [amd64])
+Conf python-numpy (1:1.16.2-1 Debian:10.13/oldstable [amd64])
+Conf python-gtk2 (2.24.0-5.1+b1 Debian:10.13/oldstable [amd64])
+Conf python-zinnia (0.06-4 Debian:10.13/oldstable [amd64])
+Conf python-tegaki (0.3.1-1.1 Debian:10.13/oldstable [all])
+Conf python-tegaki-gtk (0.3.1-1.1 Debian:10.13/oldstable [all])
+Conf tegaki-recognize (0.3.1.2-1 Debian:10.13/oldstable [all])
+Conf tegaki-zinnia-japanese (0.3-1 Debian:10.13/oldstable [all])
+root@debian:/home/demo#
+
+root@debian:/home/demo# apt install tegaki-recognize tegaki-zinnia-japanese
+
+To start tegaki, execute the command below or choose "tegaki recognize" from Desktop Menu.
+ 
+demo@debian:~$ tegaki-recognize
+
