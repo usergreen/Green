@@ -1,0 +1,755 @@
+# translation of gnome-applets.HEAD.he.po to Hebrew
+# translation of gnome-applets.gnome-2-0.po to Hebrew
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER
+# Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2002,2003
+# Yosef Or Boczko <yoseforb@gnome.org>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets.HEAD.he\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-09 20:44+0300\n"
+"PO-Revision-Date: 2016-08-09 20:46+0300\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"Language-Team: עברית <>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: ../data/glade/libgweather.xml.in.h:1
+msgid "Location Entry"
+msgstr "רשומת מיקום"
+
+#: ../data/glade/libgweather.xml.in.h:2
+msgid "Timezone Menu"
+msgstr "תפריט אזור זמן"
+
+#: ../data/glade/libgweather.xml.in.h:3
+msgid "Timezone"
+msgstr "אזור זמן"
+
+#: ../data/glade/libgweather.xml.in.h:4
+msgid "GWeather"
+msgstr "GWeather"
+
+#: ../libgweather/gweather-location-entry.c:784
+msgid "Loading..."
+msgstr "בטעינה…"
+
+#: ../libgweather/gweather-timezone.c:341
+msgid "Greenwich Mean Time"
+msgstr "שעון גריניץ׳"
+
+#: ../libgweather/gweather-timezone-menu.c:274
+msgctxt "timezone"
+msgid "Unknown"
+msgstr "לא ידוע"
+
+#: ../libgweather/gweather-weather.c:113
+msgid "Variable"
+msgstr "משתנה"
+
+#: ../libgweather/gweather-weather.c:114
+msgid "North"
+msgstr "צפון"
+
+#: ../libgweather/gweather-weather.c:114
+msgid "North - NorthEast"
+msgstr "צפון - צפון מזרח"
+
+#: ../libgweather/gweather-weather.c:114
+msgid "Northeast"
+msgstr "צפון מערב"
+
+#: ../libgweather/gweather-weather.c:114
+msgid "East - NorthEast"
+msgstr "מזרח - צפון מזרח"
+
+#: ../libgweather/gweather-weather.c:115
+msgid "East"
+msgstr "מזרח"
+
+#: ../libgweather/gweather-weather.c:115
+msgid "East - Southeast"
+msgstr "מזרח - דרום מזרח"
+
+#: ../libgweather/gweather-weather.c:115
+msgid "Southeast"
+msgstr "דרום מזרח"
+
+#: ../libgweather/gweather-weather.c:115
+msgid "South - Southeast"
+msgstr "דרום - דרום מזרח"
+
+#: ../libgweather/gweather-weather.c:116
+msgid "South"
+msgstr "דרום"
+
+#: ../libgweather/gweather-weather.c:116
+msgid "South - Southwest"
+msgstr "דרום - דרום מערב"
+
+#: ../libgweather/gweather-weather.c:116
+msgid "Southwest"
+msgstr "דרום מערב"
+
+#: ../libgweather/gweather-weather.c:116
+msgid "West - Southwest"
+msgstr "מערב - דרום מערב"
+
+#: ../libgweather/gweather-weather.c:117
+msgid "West"
+msgstr "מערב"
+
+#: ../libgweather/gweather-weather.c:117
+msgid "West - Northwest"
+msgstr "מערב - צפון מערב"
+
+#: ../libgweather/gweather-weather.c:117
+msgid "Northwest"
+msgstr "צפון מערב"
+
+#: ../libgweather/gweather-weather.c:117
+msgid "North - Northwest"
+msgstr "צפון - צפון מערב"
+
+#: ../libgweather/gweather-weather.c:124
+msgctxt "wind direction"
+msgid "Invalid"
+msgstr "שגוי"
+
+#: ../libgweather/gweather-weather.c:130
+msgid "Clear Sky"
+msgstr "שמיים בהירים"
+
+#: ../libgweather/gweather-weather.c:131
+msgid "Broken clouds"
+msgstr "עננים שבורים"
+
+#: ../libgweather/gweather-weather.c:132
+msgid "Scattered clouds"
+msgstr "עננים פזורים"
+
+#: ../libgweather/gweather-weather.c:133
+msgid "Few clouds"
+msgstr "מעט עננים"
+
+#: ../libgweather/gweather-weather.c:134
+msgid "Overcast"
+msgstr "מעונן"
+
+#: ../libgweather/gweather-weather.c:141 ../libgweather/gweather-weather.c:213
+msgctxt "sky conditions"
+msgid "Invalid"
+msgstr "שגוי"
+
+#. TRANSLATOR: If you want to know what "blowing" "shallow" "partial"
+#. * etc means, you can go to http://www.weather.com/glossary/ and
+#. * http://www.crh.noaa.gov/arx/wx.tbl.php
+#. NONE
+#: ../libgweather/gweather-weather.c:173 ../libgweather/gweather-weather.c:175
+msgid "Thunderstorm"
+msgstr "סופות רעמים"
+
+#. DRIZZLE
+#: ../libgweather/gweather-weather.c:174
+msgid "Drizzle"
+msgstr "טפטוף"
+
+#: ../libgweather/gweather-weather.c:174
+msgid "Light drizzle"
+msgstr "טפטוף קל"
+
+#: ../libgweather/gweather-weather.c:174
+msgid "Moderate drizzle"
+msgstr "טפטוף מתון"
+
+#: ../libgweather/gweather-weather.c:174
+msgid "Heavy drizzle"
+msgstr "טפטוף כבד"
+
+#: ../libgweather/gweather-weather.c:174
+msgid "Freezing drizzle"
+msgstr "טפטוף מקפיא"
+
+#. RAIN
+#: ../libgweather/gweather-weather.c:175
+msgid "Rain"
+msgstr "גשם"
+
+#: ../libgweather/gweather-weather.c:175
+msgid "Light rain"
+msgstr "גשם קל"
+
+#: ../libgweather/gweather-weather.c:175
+msgid "Moderate rain"
+msgstr "גשם מתון"
+
+#: ../libgweather/gweather-weather.c:175
+msgid "Heavy rain"
+msgstr "גשם חזק"
+
+#: ../libgweather/gweather-weather.c:175
+msgid "Rain showers"
+msgstr "ממטרי גשם"
+
+#: ../libgweather/gweather-weather.c:175
+msgid "Freezing rain"
+msgstr "גשם מקפיא"
+
+#. SNOW
+#: ../libgweather/gweather-weather.c:176
+msgid "Snow"
+msgstr "שלג"
+
+#: ../libgweather/gweather-weather.c:176
+msgid "Light snow"
+msgstr "שלג קל"
+
+#: ../libgweather/gweather-weather.c:176
+msgid "Moderate snow"
+msgstr "שלג מתון"
+
+#: ../libgweather/gweather-weather.c:176
+msgid "Heavy snow"
+msgstr "שלג כבד"
+
+#: ../libgweather/gweather-weather.c:176
+msgid "Snowstorm"
+msgstr "סופת שלגים"
+
+#: ../libgweather/gweather-weather.c:176
+msgid "Blowing snowfall"
+msgstr "משב שלגים"
+
+#: ../libgweather/gweather-weather.c:176
+msgid "Snow showers"
+msgstr "ממטרי שלג"
+
+#: ../libgweather/gweather-weather.c:176
+msgid "Drifting snow"
+msgstr "שלג נסחף"
+
+#. SNOW_GRAINS
+#: ../libgweather/gweather-weather.c:177
+msgid "Snow grains"
+msgstr "פתיתי שלג"
+
+#: ../libgweather/gweather-weather.c:177
+msgid "Light snow grains"
+msgstr "פתיתי שלג קל"
+
+#: ../libgweather/gweather-weather.c:177
+msgid "Moderate snow grains"
+msgstr "פתיתי שלג מתון"
+
+#: ../libgweather/gweather-weather.c:177
+msgid "Heavy snow grains"
+msgstr "פתיתי שלג כבד"
+
+#. ICE_CRYSTALS
+#: ../libgweather/gweather-weather.c:178
+msgid "Ice crystals"
+msgstr "גבישי קרח"
+
+#. ICE_PELLETS
+#: ../libgweather/gweather-weather.c:179
+msgid "Sleet"
+msgstr "גשם מעורב בשלג"
+
+#: ../libgweather/gweather-weather.c:179
+msgid "Little sleet"
+msgstr "גשם קרח עדין"
+
+#: ../libgweather/gweather-weather.c:179
+msgid "Moderate sleet"
+msgstr "גשם קרח מתון"
+
+#: ../libgweather/gweather-weather.c:179
+msgid "Heavy sleet"
+msgstr "גשם קרח כבד"
+
+#: ../libgweather/gweather-weather.c:179
+msgid "Sleet storm"
+msgstr "סופת גשם קרח"
+
+#: ../libgweather/gweather-weather.c:179
+msgid "Showers of sleet"
+msgstr "ממטרי גשם קרח"
+
+#. HAIL
+#: ../libgweather/gweather-weather.c:180
+msgid "Hail"
+msgstr "ברד"
+
+#: ../libgweather/gweather-weather.c:180
+msgid "Hailstorm"
+msgstr "סופת ברד"
+
+#: ../libgweather/gweather-weather.c:180
+msgid "Hail showers"
+msgstr "ממטרי ברד"
+
+#. SMALL_HAIL
+#: ../libgweather/gweather-weather.c:181
+msgid "Small hail"
+msgstr "ברד קטן"
+
+#: ../libgweather/gweather-weather.c:181
+msgid "Small hailstorm"
+msgstr "סופת ברד קטנה"
+
+#: ../libgweather/gweather-weather.c:181
+msgid "Showers of small hail"
+msgstr "ממטרים של ברד קטן"
+
+#. PRECIPITATION
+#: ../libgweather/gweather-weather.c:182
+msgid "Unknown precipitation"
+msgstr "משקע לא ידוע"
+
+#. MIST
+#: ../libgweather/gweather-weather.c:183
+msgid "Mist"
+msgstr "אד"
+
+#. FOG
+#: ../libgweather/gweather-weather.c:184
+msgid "Fog"
+msgstr "ערפל"
+
+#: ../libgweather/gweather-weather.c:184
+msgid "Fog in the vicinity"
+msgstr "ערפל בסביבה"
+
+#: ../libgweather/gweather-weather.c:184
+msgid "Shallow fog"
+msgstr "ערפל שטחי"
+
+#: ../libgweather/gweather-weather.c:184
+msgid "Patches of fog"
+msgstr "טלאי ערפל"
+
+#: ../libgweather/gweather-weather.c:184
+msgid "Partial fog"
+msgstr "ערפל חלקי"
+
+#: ../libgweather/gweather-weather.c:184
+msgid "Freezing fog"
+msgstr "ערפל מקפיא"
+
+#. SMOKE
+#: ../libgweather/gweather-weather.c:185
+msgid "Smoke"
+msgstr "עשן"
+
+#. VOLCANIC_ASH
+#: ../libgweather/gweather-weather.c:186
+msgid "Volcanic ash"
+msgstr "אפר געשי"
+
+#. SAND
+#: ../libgweather/gweather-weather.c:187
+msgid "Sand"
+msgstr "חול"
+
+#: ../libgweather/gweather-weather.c:187
+msgid "Blowing sand"
+msgstr "חול נושב"
+
+#: ../libgweather/gweather-weather.c:187
+msgid "Drifting sand"
+msgstr "חול נסחף"
+
+#. HAZE
+#: ../libgweather/gweather-weather.c:188
+msgid "Haze"
+msgstr "אובך"
+
+#. SPRAY
+#: ../libgweather/gweather-weather.c:189
+msgid "Blowing sprays"
+msgstr "טיפות נושבות"
+
+#. DUST
+#: ../libgweather/gweather-weather.c:190
+msgid "Dust"
+msgstr "אבק"
+
+#: ../libgweather/gweather-weather.c:190
+msgid "Blowing dust"
+msgstr "אבק נושב"
+
+#: ../libgweather/gweather-weather.c:190
+msgid "Drifting dust"
+msgstr "אבק נסחף"
+
+#. SQUALL
+#: ../libgweather/gweather-weather.c:191
+msgid "Squall"
+msgstr "סופה"
+
+#. SANDSTORM
+#: ../libgweather/gweather-weather.c:192
+msgid "Sandstorm"
+msgstr "סופת חול"
+
+#: ../libgweather/gweather-weather.c:192
+msgid "Sandstorm in the vicinity"
+msgstr "סופת חול בסביבה"
+
+#: ../libgweather/gweather-weather.c:192
+msgid "Heavy sandstorm"
+msgstr "סופת חול כבדה"
+
+#. DUSTSTORM
+#: ../libgweather/gweather-weather.c:193
+msgid "Duststorm"
+msgstr "סופת אבק"
+
+#: ../libgweather/gweather-weather.c:193
+msgid "Duststorm in the vicinity"
+msgstr "סופת אבק בסביבה"
+
+#: ../libgweather/gweather-weather.c:193
+msgid "Heavy duststorm"
+msgstr "סופת אבק כבדה"
+
+#. FUNNEL_CLOUD
+#: ../libgweather/gweather-weather.c:194
+msgid "Funnel cloud"
+msgstr "ענן מרוכז"
+
+#. TORNADO
+#: ../libgweather/gweather-weather.c:195
+msgid "Tornado"
+msgstr "טורנדו"
+
+#. DUST_WHIRLS
+#: ../libgweather/gweather-weather.c:196
+msgid "Dust whirls"
+msgstr "מערבולת אבק"
+
+#: ../libgweather/gweather-weather.c:196
+msgid "Dust whirls in the vicinity"
+msgstr "מערבולת אבק בסביבה"
+
+#: ../libgweather/gweather-weather.c:705
+msgid "%a, %b %d / %H∶%M"
+msgstr "ה־%b ב%a %d / %H∶%M"
+
+#: ../libgweather/gweather-weather.c:711
+msgid "Unknown observation time"
+msgstr "זמן תצפית לא ידוע"
+
+#: ../libgweather/gweather-weather.c:723
+msgctxt "sky conditions"
+msgid "Unknown"
+msgstr "לא ידוע"
+
+#. Translate to the default units to use for presenting
+#. * lengths to the user. Translate to default:inch if you
+#. * want inches, otherwise translate to default:mm.
+#. * Do *not* translate it to "predefinito:mm", if it
+#. * it isn't default:mm or default:inch it will not work
+#.
+#: ../libgweather/gweather-weather.c:745
+msgid "default:mm"
+msgstr "default:mm"
+
+#. TRANSLATOR: This is the temperature in degrees Fahrenheit (\302\260 is U+00B0 DEGREE SIGN)
+#: ../libgweather/gweather-weather.c:797
+#, c-format
+msgid "%.1f °F"
+msgstr "%.1f °F"
+
+#. TRANSLATOR: This is the temperature in degrees Fahrenheit (\302\260 is U+00B0 DEGREE SIGN)
+#: ../libgweather/gweather-weather.c:800
+#, c-format
+msgid "%d °F"
+msgstr "%d °F"
+
+#. TRANSLATOR: This is the temperature in degrees Celsius (\302\260 is U+00B0 DEGREE SIGN)
+#: ../libgweather/gweather-weather.c:806
+#, c-format
+msgid "%.1f °C"
+msgstr "%.1f °C"
+
+#. TRANSLATOR: This is the temperature in degrees Celsius (\302\260 is U+00B0 DEGREE SIGN)
+#: ../libgweather/gweather-weather.c:809
+#, c-format
+msgid "%d °C"
+msgstr "%d °C"
+
+#. TRANSLATOR: This is the temperature in kelvin
+#: ../libgweather/gweather-weather.c:815
+#, c-format
+msgid "%.1f K"
+msgstr "%.1f K"
+
+#. TRANSLATOR: This is the temperature in kelvin
+#: ../libgweather/gweather-weather.c:818
+#, c-format
+msgid "%d K"
+msgstr "%d K"
+
+#: ../libgweather/gweather-weather.c:841 ../libgweather/gweather-weather.c:857
+#: ../libgweather/gweather-weather.c:873 ../libgweather/gweather-weather.c:935
+msgctxt "temperature"
+msgid "Unknown"
+msgstr "לא ידוע"
+
+#: ../libgweather/gweather-weather.c:895
+msgctxt "dew"
+msgid "Unknown"
+msgstr "לא ידוע"
+
+#: ../libgweather/gweather-weather.c:915
+msgctxt "humidity"
+msgid "Unknown"
+msgstr "לא ידוע"
+
+#. TRANSLATOR: This is the humidity in percent
+#: ../libgweather/gweather-weather.c:918
+#, c-format
+msgid "%.f%%"
+msgstr "%.f%%"
+
+#. TRANSLATOR: This is the wind speed in knots
+#: ../libgweather/gweather-weather.c:964
+#, c-format
+msgid "%0.1f knots"
+msgstr "‏%0.1f קשר"
+
+#. TRANSLATOR: This is the wind speed in miles per hour
+#: ../libgweather/gweather-weather.c:967
+#, c-format
+msgid "%.1f mph"
+msgstr "‏%.1f מיילים לשעה"
+
+#. TRANSLATOR: This is the wind speed in kilometers per hour
+#: ../libgweather/gweather-weather.c:970
+#, c-format
+msgid "%.1f km/h"
+msgstr "‏%.1f קילומטרים לשעה"
+
+#. TRANSLATOR: This is the wind speed in meters per second
+#: ../libgweather/gweather-weather.c:973
+#, c-format
+msgid "%.1f m/s"
+msgstr "‏%.1f מטרים לשנייה"
+
+#. TRANSLATOR: This is the wind speed as a Beaufort force factor
+#. * (commonly used in nautical wind estimation).
+#.
+#: ../libgweather/gweather-weather.c:978
+#, c-format
+msgid "Beaufort force %.1f"
+msgstr "‏%.1f כוח ביופורט"
+
+#: ../libgweather/gweather-weather.c:999
+msgctxt "wind speed"
+msgid "Unknown"
+msgstr "לא ידוע"
+
+#: ../libgweather/gweather-weather.c:1001
+msgid "Calm"
+msgstr "רגוע"
+
+#. TRANSLATOR: This is 'wind direction' / 'wind speed'
+#: ../libgweather/gweather-weather.c:1009
+#, c-format
+msgid "%s / %s"
+msgstr "%s / %s"
+
+#: ../libgweather/gweather-weather.c:1045
+msgctxt "pressure"
+msgid "Unknown"
+msgstr "לא ידוע"
+
+#. TRANSLATOR: This is pressure in inches of mercury
+#: ../libgweather/gweather-weather.c:1051
+#, c-format
+msgid "%.2f inHg"
+msgstr "%.2f inHg"
+
+#. TRANSLATOR: This is pressure in millimeters of mercury
+#: ../libgweather/gweather-weather.c:1054
+#, c-format
+msgid "%.1f mmHg"
+msgstr "%.1f mmHg"
+
+#. TRANSLATOR: This is pressure in kiloPascals
+#: ../libgweather/gweather-weather.c:1057
+#, c-format
+msgid "%.2f kPa"
+msgstr "%.2f kPa"
+
+#. TRANSLATOR: This is pressure in hectoPascals
+#: ../libgweather/gweather-weather.c:1060
+#, c-format
+msgid "%.2f hPa"
+msgstr "%.2f hPa"
+
+#. TRANSLATOR: This is pressure in millibars
+#: ../libgweather/gweather-weather.c:1063
+#, c-format
+msgid "%.2f mb"
+msgstr "%.2f mb"
+
+#. TRANSLATOR: This is pressure in atmospheres
+#: ../libgweather/gweather-weather.c:1066
+#, c-format
+msgid "%.3f atm"
+msgstr "%.3f אטמוספירה"
+
+#: ../libgweather/gweather-weather.c:1104
+msgctxt "visibility"
+msgid "Unknown"
+msgstr "לא ידוע"
+
+#. TRANSLATOR: This is the visibility in miles
+#: ../libgweather/gweather-weather.c:1110
+#, c-format
+msgid "%.1f miles"
+msgstr "‏%.1f מיילים"
+
+#. TRANSLATOR: This is the visibility in kilometers
+#: ../libgweather/gweather-weather.c:1113
+#, c-format
+msgid "%.1f km"
+msgstr "‏%.1f קילומטרים"
+
+#. TRANSLATOR: This is the visibility in meters
+#: ../libgweather/gweather-weather.c:1116
+#, c-format
+msgid "%.0fm"
+msgstr "‏‏%.0f מטרים"
+
+#: ../libgweather/gweather-weather.c:1144
+#: ../libgweather/gweather-weather.c:1169
+msgid "%H∶%M"
+msgstr "%H∶%M"
+
+#: ../libgweather/gweather-weather.c:1263
+msgid "Retrieval failed"
+msgstr "קבלה נכשלה"
+
+#: ../libgweather/weather-metar.c:573
+#, c-format
+msgid "Failed to get METAR data: %d %s.\n"
+msgstr "קבלת נתוני METAR נכשלה: ‏%d ‏%s.\n"
+
+#: ../libgweather/weather-owm.c:383
+msgid ""
+"Weather data from the <a href=\"http://openweathermap.org\">Open Weather Map "
+"project</a>"
+msgstr "נתוני מזג אוויר מ<a href=\"%s\">מיזם מפת מזג האוויר הפתוח</a>"
+
+#. The new (documented but not advertised) API is less strict in the
+#. format of the attribution, and just requires a generic CC-BY compatible
+#. attribution with a link to their service.
+#.
+#. That's very nice of them!
+#.
+#: ../libgweather/weather-yrno.c:507
+msgid ""
+"Weather data from the <a href=\"http://www.met.no/\">Norwegian "
+"Meteorological Institute</a>"
+msgstr ""
+"מידע אודות מזג האוויר מה<a href=\"http://www.met.no/\">מכון המטאורולוגי "
+"הנורבגי</a>"
+
+#: ../schemas/org.gnome.GWeather.gschema.xml.h:1
+msgid "URL for the radar map"
+msgstr "URL for the radar map"
+
+#: ../schemas/org.gnome.GWeather.gschema.xml.h:2
+msgid ""
+"The custom URL from where to retrieve a radar map, or empty for disabling "
+"radar maps."
+msgstr ""
+"The custom URL from where to retrieve a radar map, or empty for disabling "
+"radar maps."
+
+#: ../schemas/org.gnome.GWeather.gschema.xml.h:3
+msgid "Temperature unit"
+msgstr "Temperature unit"
+
+#: ../schemas/org.gnome.GWeather.gschema.xml.h:4
+msgid ""
+"The unit of temperature used for showing weather. Valid values are 'kelvin', "
+"'centigrade' and 'fahrenheit'."
+msgstr ""
+"The unit of temperature used for showing weather. Valid values are 'kelvin', "
+"'centigrade' and 'fahrenheit'."
+
+#: ../schemas/org.gnome.GWeather.gschema.xml.h:5
+msgid "Distance unit"
+msgstr "Distance unit"
+
+#: ../schemas/org.gnome.GWeather.gschema.xml.h:6
+msgid ""
+"The unit of distance used for showing weather (for example for visibility or "
+"for distance of important events). Valid values are 'meters', 'km' and "
+"'miles'."
+msgstr ""
+"The unit of distance used for showing weather (for example for visibility or "
+"for distance of important events). Valid values are 'meters', 'km' and "
+"'miles'."
+
+#: ../schemas/org.gnome.GWeather.gschema.xml.h:7
+msgid "Speed unit"
+msgstr "Speed unit"
+
+#: ../schemas/org.gnome.GWeather.gschema.xml.h:8
+msgid ""
+"The unit of speed used for showing weather (for example for wind speed). "
+"Valid values are 'ms' (meters per second), 'kph' (kilometers per hour), "
+"'mph' (miles per hour), 'knots' and 'bft' (Beaufort scale)."
+msgstr ""
+"The unit of speed used for showing weather (for example for wind speed). "
+"Valid values are 'ms' (meters per second), 'kph' (kilometers per hour), "
+"'mph' (miles per hour), 'knots' and 'bft' (Beaufort scale)."
+
+#: ../schemas/org.gnome.GWeather.gschema.xml.h:9
+msgid "Pressure unit"
+msgstr "Pressure unit"
+
+#: ../schemas/org.gnome.GWeather.gschema.xml.h:10
+msgid ""
+"The unit of pressure used for showing weather. Valid values are "
+"'kpa' (kilopascal), 'hpa' (hectopascal), 'mb' (millibar, mathematically "
+"equivalent to 1 hPa but shown differently), 'mm-hg' (millimeters of "
+"mercury), 'inch-hg' (inches of mercury), 'atm' (atmospheres)."
+msgstr ""
+"The unit of pressure used for showing weather. Valid values are "
+"'kpa' (kilopascal), 'hpa' (hectopascal), 'mb' (millibar, mathematically "
+"equivalent to 1 hPa but shown differently), 'mm-hg' (millimeters of "
+"mercury), 'inch-hg' (inches of mercury), 'atm' (atmospheres)."
+
+#: ../schemas/org.gnome.GWeather.gschema.xml.h:11
+msgid "Default location"
+msgstr "Default location"
+
+#: ../schemas/org.gnome.GWeather.gschema.xml.h:12
+msgid ""
+"The default location for the weather applet. The first field is the name "
+"that will be shown. If empty, it will be taken from the locations database. "
+"The second field is the METAR code for the default weather station. It must "
+"not be empty and must correspond to a &lt;code&gt; tag in the Locations.xml "
+"file. The third field is a tuple of (latitude, longitude), to override the "
+"value taken from the database. This is only used for sunrise and moon phase "
+"calculations, not for weather forecast."
+msgstr ""
+"The default location for the weather applet. The first field is the name "
+"that will be shown. If empty, it will be taken from the locations database. "
+"The second field is the METAR code for the default weather station. It must "
+"not be empty and must correspond to a &lt;code&gt; tag in the Locations.xml "
+"file. The third field is a tuple of (latitude, longitude), to override the "
+"value taken from the database. This is only used for sunrise and moon phase "
+"calculations, not for weather forecast."
