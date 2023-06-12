@@ -51,7 +51,7 @@ msgstr "セッション(_I)"
 
 #: ../grsync.glade.h:9
 msgid "_Import"
-msgstr "重要(_I)"
+msgstr "インポート(_I)"
 
 #: ../grsync.glade.h:10
 msgid "_Export"
@@ -82,7 +82,7 @@ msgid ""
 "Show what would have been done, but actually do nothing (\"dry-run\" in "
 "rsync language)"
 msgstr ""
-"実行結果を予想して表示しますが、実際には何も行いません (\"dry-run\" in rsync language)"
+"実行結果を予測して表示しますが、実際には何も行いません (\"dry-run\" in rsync language)"
 
 #: ../grsync.glade.h:17
 msgid "_Simulate"
@@ -238,12 +238,12 @@ msgstr ""
 
 #: ../grsync.glade.h:54
 msgid "Copy symlinks as symlinks"
-msgstr "シンボリックリンクをシンボリックリンクのままコピー"
+msgstr "シンボリックリンクをそのままコピー"
 
 #: ../grsync.glade.h:55
 msgid "Symbolic links are copied as such, do not copy link target file"
 msgstr ""
-"シンボリックリンクをそのままコピーし、リンク先のファイルはコピーしません"
+"シンボリックリンクをシンボリックリンクのままコピーし、リンク先のファイルはコピーしません"
 
 #: ../grsync.glade.h:56
 msgid "Make backups"
@@ -362,14 +362,14 @@ msgid ""
 "trouble.\n"
 "Try a command like \"mail -s 'rsync error' you@domain.com\"."
 msgstr ""
-"もし \"dopo\" コマンド同期中にエラーが発生した時のみ、 \"dopo\" コマンドを実行します。\n"
+"もし同期中にエラーが発生した時のみ、 \"after\" コマンドを実行してください。\n"
 "例えば、万が一トラブルがあった時だけメールを送るといった使い方ができます。 "
 "\n"
-"次のようなコマンドを試してください : Prova un comando come \"mail -s 'rsync error' you@domain.com\"."
+"次のようなコマンドを試してください : \"mail -s 'rsync error' you@domain.com\"."
 
 #: ../grsync.glade.h:80
 msgid "Notes:"
-msgstr "備考 :"
+msgstr "コメント :"
 
 #: ../grsync.glade.h:81
 msgid "Free text notes on the current session"
@@ -591,10 +591,12 @@ msgid ""
 "\t\t\t rsync -a /src/foo /dest\n"
 "\t\t\t rsync -a /src/foo/ /dest/foo\n"
 msgstr ""
-"ソースディレクトリの末尾にスラッシュを付けることで、コピー先に追加的なディレクトリレベルを作ることを "
-"避けることができます。\n"
-"ソースディレクトリの末尾の/は、\"「そのディレクトリの内容をコピーする」\" という意味であって、 "
-"\" 「ディレクトリとその内容をコピーする」 \" という意味ではないと考えてください。"
+"ソースディレクトリの末尾にスラッシュを付けることで、コピー先に追加的な\n"
+"ディレクトリレベルを作ることを避けることができます。\n"
+"ソースディレクトリの末尾の / 記号は、「そのディレクトリの内容をコピーする」\n"
+"という意味であって、「ディレクトリとその内容をコピーする」"
+"という意味では\n"
+"ないと考えてください。\n"
 "\n"
 "つまり、以下の各コマンドは、同じようにファイルをコピーします :\n"
 "\n"
