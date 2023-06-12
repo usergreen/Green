@@ -210,7 +210,7 @@ msgstr "既存ファイルのみ更新"
 
 #: ../grsync.glade.h:48
 msgid "Keep partially transferred files"
-msgstr "部分的に転送されたファイルは保持する"
+msgstr "部分的に転送されたファイルは保持"
 
 #: ../grsync.glade.h:49
 msgid "Don't map uid/gid values"
@@ -255,11 +255,11 @@ msgstr "同期先にある既存ファイルのバックアップを作成"
 
 #: ../grsync.glade.h:58
 msgid "Copy hardlinks as hardlinks"
-msgstr "ハードリンクをハードリンクとしてコピー"
+msgstr "ハードリンクをそのままコピー"
 
 #: ../grsync.glade.h:59
 msgid "Hard links are copied as such, do not copy link target file"
-msgstr "ハードリンクをそのままコピーし、リンク先のファイルはコピーしません"
+msgstr "ハードリンクをハードリンクとしてコピーし、リンク先のファイルはコピーしません"
 
 #: ../grsync.glade.h:60
 msgid "Show itemized changes list"
