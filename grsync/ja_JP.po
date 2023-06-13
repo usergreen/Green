@@ -82,7 +82,7 @@ msgid ""
 "Show what would have been done, but actually do nothing (\"dry-run\" in "
 "rsync language)"
 msgstr ""
-"実行結果を予測して表示しますが、実際には何も行いません (\"dry-run\" in rsync language)"
+"実行結果を予測して表示するだけで、実際には何も実行しません\n (これを「ドライラン」と呼びます)"
 
 #: ../grsync.glade.h:17
 msgid "_Simulate"
@@ -186,7 +186,7 @@ msgstr "このボタンをクリックすると同期元と同期先のディレ
 
 #: ../grsync.glade.h:42
 msgid "Source and Destination:"
-msgstr "ソースと同期対象:"
+msgstr "同期元（ソース）と同期先:"
 
 #: ../grsync.glade.h:43
 msgid "Basic options"
@@ -293,7 +293,7 @@ msgid ""
 "escape remote folders and other options which use file names like --exclude"
 msgstr ""
 "リモート引数をシェル拡張から保護することで、手動で引数を指定する必要をなくします "
-"リモートフォルダやファイル名を使用するその他のオプション --excludeなど"
+"リモートフォルダやファイル名を使用するその他のオプション --exclude など"
 
 #: ../grsync.glade.h:67
 msgid "Advanced options"
@@ -309,13 +309,13 @@ msgid ""
 "useful, for instance, to mount a filesystem before starting or to do some "
 "cleanup."
 msgstr ""
-"rsync の前にコマンドを実行したい場合、この項目をクリックします。例えば、 "
-"起動前にファイルシステムをマウントしたり、クリーンアップを行ったりするのに "
+"rsync の前にコマンドを実行したい場合、この項目をクリックします。例えば、"
+"起動前にファイルシステムをマウントしたり、クリーンアップを行ったりするのに"
 "役立ちます。"
 
 #: ../grsync.glade.h:70
 msgid "Execute this command after rsync:"
-msgstr "rsync の後にこのコマンドを実行 :"
+msgstr "rsync の後に次のコマンドを実行 :"
 
 #: ../grsync.glade.h:71
 msgid ""
@@ -323,8 +323,8 @@ msgid ""
 "useful, for instance, to unmount a filesystem at the end or to do some "
 "cleanup."
 msgstr ""
-"rsync の後にコマンドを実行したい場合、この項目をクリックします。例えば、 "
-"終了後にファイルシステムをマウントしたり、クリーンアップを行ったりするのに "
+"rsync の後にコマンドを実行したい場合、この項目をクリックします。例えば、"
+"終了後にファイルシステムをマウントしたり、クリーンアップを行ったりするのに"
 "役立ちます。"
 
 #: ../grsync.glade.h:72
@@ -336,7 +336,7 @@ msgid ""
 "By setting this switch, the browse source and destination buttons will open "
 "a dialog for selecting files instead of folders"
 msgstr ""
-"このスイッチを設定すると、同期元と同期先のボタンで、 "
+"このスイッチを設定すると、同期元と同期先のボタンで、"
 "フォルダの代わりにファイルを選択するダイアログが開きます"
 
 #: ../grsync.glade.h:74
@@ -348,7 +348,7 @@ msgid ""
 "When running the \"before\" command, if it fails for some reason, don't run "
 "rsync and halt"
 msgstr ""
-"もし \"before\" コマンド実行時に何らかの理由で失敗したら、rsync を実行せず "
+"もし \"before\" コマンド実行時に何らかの理由で失敗したら、rsync を実行しないで"
 "中止します"
 
 #: ../grsync.glade.h:76
@@ -384,7 +384,7 @@ msgid ""
 "Run rsync with superuser (root, administrator) privileges. Use this if you "
 "need to access system files, for example when doing a full system backup."
 msgstr ""
-"スーパーユーザー（root, 管理者権限）で rsync を実行したい時に使うオプションです "
+"スーパーユーザー（root, 管理者権限）で rsync を実行したい時に使うオプションです。"
 "システムファイルにアクセスできるので、システムの完全なバックアップを作成できます。"
 
 #: ../grsync.glade.h:84
@@ -432,7 +432,7 @@ msgid ""
 "Wether to show rsync output by default or hide it (show graphical "
 "information only)"
 msgstr ""
-"rsync の出力を標準で表示するかどうかの設定です "
+"rsync の出力を標準で表示するかどうかを設定します"
 "（グラフィカルな情報のみを表示します）"
 
 #: ../grsync.glade.h:95
@@ -451,7 +451,7 @@ msgstr "終了時にエラーの一覧を表示"
 msgid ""
 "When rsync has finished, show all the errors encountered in a separate window"
 msgstr ""
-"rsync が終了時、発生したすべてのエラーを別ウィンドウで表示します"
+"rsync の終了時、発生したすべてのエラーを別ウィンドウで表示します"
 
 #: ../grsync.glade.h:99
 msgid "Enable logging"
@@ -463,7 +463,7 @@ msgid ""
 "will be located in the grsync directory (usually \".grsync\" into your user "
 "home)"
 msgstr ""
-"rsyncの出力をログファイルに保存します。ファイル名はセッションと同じ名前になります。"
+"rsync の出力をログファイルに保存します。ファイル名はセッションと同じ名前になります。"
 "それは grsync ディレクトリに置かれます（通常、ユーザーのホームの\".grsync\" です）"
 
 #: ../grsync.glade.h:101
@@ -495,7 +495,7 @@ msgid ""
 "Select this if you want an additional \"switch source with destination\" "
 "button in the basic options tab"
 msgstr ""
-"基本オプションタブに \"「同期先とソースの切り替え」\" ボタンを追加したい場合は、 "
+"基本オプションタブに \"「同期先とソースの切り替え」\" ボタンを追加したい場合は、"
 "こちらを選択します"
 
 #: ../grsync.glade.h:107
@@ -508,8 +508,8 @@ msgid ""
 "of the application bar (may not work on Unity environments, like Ubuntu >= "
 "11.4)"
 msgstr ""
-"アプリケーションバーの代わりにシステムトレイにアプリケーションのアイコンを表示する場合は、 "
-"このボックスをチェックしてください（Ubuntu >= 11.4 などの Unity 環境では動作しない場合 "
+"アプリケーションバーの代わりにシステムトレイにアプリケーションのアイコンを表示する場合は、"
+"このボックスをチェックしてください（Ubuntu >= 11.4 などの Unity 環境では動作しない場合"
 "があります）。"
 
 #: ../grsync.glade.h:109
@@ -521,7 +521,7 @@ msgid ""
 "Whether to overwrite the logs when running a session. This will make you "
 "save space, but you'll loose the logs of the previous runs"
 msgstr ""
-"セッションを実行する際に、ログを上書きするかどうかの設定です。これによって、 "
+"セッションを実行する際に、ログを上書きするかどうかの設定です。これによって、"
 "消費する容量を節約することができますが、以前に保存した実行のログは失われます"
 
 #: ../grsync.glade.h:111
@@ -554,7 +554,7 @@ msgid ""
 "may report wrong values depending on the ability of rsync to estimate the "
 "files to be copied in advance"
 msgstr ""
-"全体の転送進捗状況：rsync のバージョン 2.6.1 以降でのみ動作します。ただし、rsync が "
+"全体の転送進捗状況：rsync のバージョン 2.6.1 以降でのみ動作します。ただし、rsync が、"
 "事前にコピーするファイルの推定機能によっては、誤った値を報告する場合があります"
 
 #: ../grsync.glade.h:118
@@ -702,7 +702,7 @@ msgstr "本当に '%s' セッションを削除しますか？"
 
 #: ../src/callbacks.c:1270
 msgid "Application icons by Roberto Gadotti <info@kuama.net>"
-msgstr "アプリケーションのアイコンの作者 : Roberto Gadotti <info@kuama.net>"
+msgstr "アプリケーションアイコンの作者 : Roberto Gadotti <info@kuama.net>"
 
 #: ../src/callbacks.c:1275
 msgid "Written by Piero Orsoni <orsoni@gmail.com>"
