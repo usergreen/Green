@@ -1,0 +1,34 @@
+This is the README file for stopwatch, a program that implements a
+stopwatch.  I wrote it to help me time talks or individual slides
+within a talk.  For that purpose, it works well.
+
+--------------------
+To Install
+--------------------
+
+See the install instructions at http://expect.nist.gov/stopwatch/#install
+
+--------------------
+To Use
+--------------------
+
+See the directions at http://expect.nist.gov/stopwatch/#directions
+
+--------------------
+Systems Supported
+--------------------
+
+Stopwatch should work on any system that supports Tk 8.3 or later.
+For earlier versions, see: http://expect.nist.gov/stopwatch
+
+--------------------
+Author
+--------------------
+
+Don Libes
+National Institute of Standards and Technology
+Bldg 220, Rm A-127
+Gaithersburg, MD  20899
+(301) 975-3535
+libes@nist.gov
+

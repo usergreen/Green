@@ -1,0 +1,24 @@
+I have translated this application into Japanese.
+Please add Japanese version in the next release for the convenience of users in Japanese.
+
+Best regards,
+Green
+
+------------------------
+
+Bug report submitted to: Debian Bug Tracking System <submit@bugs.debian.org>
+Copies will be sent after processing to:
+  usergreen@users.osdn.me
+
+If you want to provide additional information, please wait to receive the bug
+tracking number via email; you may then send any extra information to
+n@bugs.debian.org (e.g. nnnnnn@bugs.debian.org), where n is the bug number.
+Normally you will receive an acknowledgement via email including the bug report
+number within an hour; if you haven't received a confirmation, then the bug
+reporting process failed at some point (reportbug or MTA failure, BTS
+maintenance, etc.).
+
+-------------------------
+
+https://www.mail-archive.com/debian-bugs-dist%40lists.debian.org/msg1911950.html
+

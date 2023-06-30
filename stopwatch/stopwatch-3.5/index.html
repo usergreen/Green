@@ -1,0 +1,93 @@
+<TITLE>Stopwatch Home Page</TITLE>
+<body bgcolor="#C0B090" background="http://expect.nist.gov/art/yellow-weave.gif">
+<h1>The Stopwatch Home Page</h1>
+<h3>Description</h3>
+
+Stopwatch does what its name implies - enables hand timing much like a
+physical stopwatch.  It can also be used as a countdown timer.
+
+<p>Stopwatch has millisecond accuracy and no artificial limit on hours.
+Stopwatch runs on UNIX, Windows, and MacOS.
+
+<p>Stopwatch normally runs as a standalone program.  To run it this
+way, <a href="#download">download</a> and <a
+href="#install">install</a> it.  You can also run stopwatch <a
+href="tclet.html">inside the browser</a>, if you have the Tcl plugin.
+
+<h3><a name="directions">Directions<img src="stopwatch.gif" align=right border=2></h3>
+
+<p>Press "start" to start the stopwatch and "stop" to stop it.
+"record" records the current time and selects it so that it can
+readily be pasted into other programs.  Recorded times are marked with
+an L for "lap" or T for "total".  When stopped, you can cut/paste/edit
+the time by hand and set it to any valid time.  "zero" resets the time
+to zero.  Holding down the shift key while pressing record or zero, records and then zeros the time.
+
+
+<p>Time moves forward or backward according to the Run menu.  By
+default, time is stopped automatically when either the lap or total
+time reaches zero.  To disable the automatic stop, unselect Run -&gt;
+Stop At Zero.
+
+<h3><a name="download">Download</h3>
+
+<table border=2>
+<tr>
+<td><a href="http://expect.nist.gov/stopwatch/stopwatch.tcl.html">source</a></td>
+<td>This single file is all you really need.</td>
+<tr>
+<td><a href="http://expect.nist.gov/stopwatch/stopwatch.tar.gz">complete distribution</a></td>
+<td>A full distribution for people who want the
+<a href="http://expect.nist.gov/stopwatch/README">README</a>,
+<a href="http://expect.nist.gov/stopwatch/HISTORY">HISTORY</a>,
+and other unnecessary stuff.</td>
+</tr>
+</table>
+
+<h3><a name="install">Installation</h3>
+
+<p>There is no installation step (such as "configure" or "Make").
+Once downloaded, simply run stopwatch with wish or any Tk-enabled
+interpreter.  If you're unfamiliar with wish or Tk, download the <a href="http://www.tcl.tk/software">Tcl/Tk distribution from the Tcl Developer Xchange</a>.</p>
+
+<h3>Version</h3>
+
+This page describes stopwatch version 3.5.
+
+<h3>Price</h3>
+
+Stopwatch is free.
+
+<h3>Copy and Reuse Information</h3>
+
+Stopwatch is in the public domain.
+
+<h3>Caveats</h3>
+
+<p>Stopwatch requires Tcl/Tk 7.5 or later.  Millisecond timing is
+available when using Tcl 8.3 or later.
+
+<p>By default, the maximum time is just over 596 hours (about 25
+days).  The range may be increased (to about 68 years) by disabling
+the millisecond timer.  To disable the millisecond timer, unselect Run -&gt; Milliseconds.
+
+<h3>Contact Info</h3>
+<a HREF="http://www.nist.gov/msidstaff/libes"><address>Don Libes, libes@nist.gov</address></a>
+<address><a href="http://www.nist.gov">National Institute of Standards and Technology</a></address>
+<address>100 Bureau Drive, Stop 8264</address>
+<address>Gaithersburg, MD 20899-8264</address>
+<address>USA</address>
+<br>
+
+
+<hr>
+<h6>Names of companies and products, and links to commercial pages are
+provided in order to adequately specify procedures and equipment used.
+In no case does such identification imply recommendation or
+endorsement by the National Institute of Standards and Technology, nor
+does it imply that the products are necessarily the best available for
+the purpose.  </h6>
+
+<h6>Last modified: Thu Mar 18 12:25:44 EST 2004</h6>
+
+</home>

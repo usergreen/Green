@@ -1,0 +1,476 @@
+#!/depot/path/wish -f
+######################################################################
+# Name: Stopwatch
+# Author: Don Libes <libes@nist.gov>
+# Date first released: 9/26/96
+# Description: Stopwatch is a tool for hand timing, such as timing how
+#   long a talk or part of a talk takes.  See the home page for more
+#   details.
+#
+# Japanese translation: Green <usergreen@users.sourceforge.net>, 2023
+#
+set version 3.5
+set versionDate 2004/6/23
+# For the latest version: http://expect.nist.gov/stopwatch
+######################################################################
+
+######################################################################
+# User-settable features
+######################################################################
+
+catch {                       ;# allow it to run in a browser
+    tk_setPalette     #dfd5e7 ;# touch of lavender
+}
+
+set time(startColor) #009900  ;# medium green
+set time(stopColor)  #ff0000  ;# red
+set time(msecShow) 1          ;# To disable millisecond timing, set to 0.
+                              ;# Not much reason to do this unless you
+			      ;# find the millisecond display distracting
+			      ;# or you're timing for more than 24 days.
+			      ;# If the version of Tcl that you're using
+			      ;# doesn't support millisecond timing, then
+			      ;# this option will be disabled automatically.
+
+set time(forward) 1           ;# runs backward when 0
+set time(stopAtZero) 1        ;# to use in countdown mode
+
+option add *Entry.font {Times 18}
+
+######################################################################
+# End of user-settable features
+######################################################################
+
+proc stop {} {
+    global time
+
+    .startstop config -text 開始 -command start
+    .startstop config -foreground       $time(startColor) \
+	              -activeforeground $time(startColor)
+    .m.r entryconfigure $::menuStartStopIndex \
+	              -foreground       $time(startColor) \
+	              -activeforeground $time(startColor) \
+    		      -label 開始 \
+    		      -command start
+    .m.r entryconfigure $::menuMsecIndex     -state normal
+    .m.r entryconfigure $::menuForwardIndex  -state normal
+    .m.r entryconfigure $::menuBackwardIndex -state normal
+
+    if {![info exists time(tickId)]} return
+    after cancel $time(tickId)
+    unset time(tickId)
+}
+
+proc start {} {
+    global time
+
+    if {[catch {timescan time(total)} time(tstart,relative)]} return
+    if {[catch {timescan time(lap)} time(lstart,relative)]} return
+
+    .startstop config -text 停止 -command stop
+    .startstop config -foreground       $time(stopColor) \
+	              -activeforeground $time(stopColor)
+    .m.r entryconfigure $::menuStartStopIndex \
+	              -foreground       $time(stopColor) \
+	              -activeforeground $time(stopColor) \
+    		      -label 停止 \
+    		      -command stop
+    .m.r entryconfigure $::menuMsecIndex     -state disabled
+    .m.r entryconfigure $::menuForwardIndex  -state disabled
+    .m.r entryconfigure $::menuBackwardIndex -state disabled
+    set now [now]
+
+    if {$time(forward)} {
+	set time(tstart) [expr {$now - $time(tstart,relative)}]
+	set time(lstart) [expr {$now - $time(lstart,relative)}]
+    } else {
+	set time(tstart) [expr {$now + $time(tstart,relative)}]
+	set time(lstart) [expr {$now + $time(lstart,relative)}]
+    }	    
+
+    # start the clock ticking
+    tick
+}
+
+# configure millisecond support according to the setting of time(msecShow)
+proc msecConfig {} {
+    global time
+
+    # If millisecond time requested, try it out first and if it doesn't
+    # work, fall back to single-second timing.
+    if {$time(msecShow) && (0 == [catch {clock clicks -milliseconds}])} {
+	proc now {} {clock clicks -milliseconds}
+    } else {
+	proc now {} {clock seconds}
+	set time(msecShow) 0
+    }
+
+    # By using either msecs or secs as the underlying quantum, we can get
+    # accuracy where we want it.
+    if {$time(msecShow)} {
+	set time(msecsPerTick)     1
+	set time(ticksPerSec)   1000
+	set time(ticksPerMin)  60000
+	set time(ticksPerHr) 3600000
+    } else {
+	set time(msecsPerTick)  1000
+	set time(ticksPerSec)      1
+	set time(ticksPerMin)     60
+	set time(ticksPerHr)    3600
+    }
+}
+msecConfig
+
+# tick is called every so often to update the clock.
+proc tick {} {
+    global time
+
+    set now [now]
+    set stop 0
+
+    if {$::time(forward)} {
+	set ttime [expr {$now - $time(tstart)}]
+	set ltime [expr {$now - $time(lstart)}]
+
+	if {$time(stopAtZero)} {
+	    # time has passed zero crossing, so adjust both counters
+	    # so at least one of them shows perfect zero and the other
+	    # is adjusted by the difference.
+
+	    if {(($time(tstart,relative) < 0) && ($ttime >= 0))} {
+		incr ltime [expr {-$ttime}]
+		set  ttime 0
+		set stop 1
+	    } elseif {(($time(lstart,relative) < 0) && ($ltime >= 0))} {
+		incr ttime [expr {-$ltime}]
+		set  ltime 0
+		set stop 1
+	    }
+	}
+    } else {
+	set ttime [expr {$time(tstart) - $now}]
+	set ltime [expr {$time(lstart) - $now}]
+
+	if {$time(stopAtZero)} {
+	    # time has passed zero crossing, so adjust both counters
+	    # so at least one of them shows perfect zero and the other
+	    # is adjusted by the difference.
+
+	    if {(($time(tstart,relative) > 0) && ($ttime <= 0))} {
+		incr ltime [expr {-$ttime}]
+		set  ttime 0
+		set stop 1
+	    } elseif {(($time(lstart,relative) > 0) && ($ltime <= 0))} {
+		incr ttime [expr {-$ltime}]
+		set  ltime 0
+		set stop 1
+	    }
+	}
+    }
+    set time(total) [timeformat $ttime]
+    set time(lap)   [timeformat $ltime]
+
+    if {$stop} {
+	stop
+	bell
+    } else {
+	set time(tickId) [after $time(msecsPerTick) tick]
+    }
+}
+
+# parse displayed time
+proc timescan {timevar} {
+    upvar $timevar timetext
+    global time
+
+    # possible sign
+    regexp ^(-)?(.*) $timetext x sign timetext
+
+    # accept user-supplied time with or without msec
+    if {4 != [scan $timetext %d:%d:%d.%d hr min sec msec]} {
+	set msec 0
+	if {3 != [scan $timetext %d:%d:%d hr min sec]} {
+	    set timetext "what?"
+	    error "conversion error"
+	}
+    }
+
+    if {!$time(msecShow)} {
+	set msec 0
+    }
+
+    set ticks [expr {(($hr*60 + $min)*60 + $sec)*$time(ticksPerSec) + $msec}]
+    if {$sign == "-"} {
+	set ticks [expr {0 - $ticks}]
+    }
+
+    return $ticks
+}
+
+# format time for display
+proc timeformat {ticks} {
+    global time
+
+    if {$ticks < 0} {
+	set sign "-"
+	set ticks [expr {abs($ticks)}]
+    } else {
+	set sign ""
+    }
+
+    set r $sign[format %03d:%02d:%02d \
+	       [expr { $ticks                      /$time(ticksPerHr) }] \
+	       [expr {($ticks % $time(ticksPerHr) )/$time(ticksPerMin)}] \
+	       [expr {($ticks % $time(ticksPerMin))/$time(ticksPerSec)}]]
+    if {$time(msecShow)} {
+	append r [format ".%03d" [expr {$ticks % 1000}]]
+    }
+
+    return $r
+}
+
+proc record {type time} {
+    .record.t tag remove sel 1.0 end
+    .record.t insert 1.0 "$type $time$::recordeol"
+    .record.t tag add sel 1.2 1.end
+    .record.t see 1.0
+    
+    # add newlines after every record but the first
+    set ::recordeol "\n"
+}
+set recordeol ""
+
+########################################################################
+# Mostly widget layout stuff after this point.
+########################################################################
+
+# Allow enough display space for "hhh:mm:ss.mmm"  These don't literally
+# add up because less space is taken by punctuation.
+option add *Entry.width 12
+
+label .totallabel -text "合計時間:" -anchor e
+entry .totaltime  -textvar time(total)
+button .totalzero -text "リセット" -command {
+    set time(total) [timeformat 0]
+    .lapzero invoke
+    set time(tstart) [now] ;# if clock running, this needs to be updated
+}
+button .totalrecord -text "記録" -command {
+    record T $time(total)
+}
+proc totalzr {} {
+    .totalrecord invoke
+    .totalzero invoke
+}
+bind .totalzero <Control-1> {totalzr; break}
+bind .totalrecord <Control-1> {totalzr; break}
+
+label .laplabel -text "ラップ時間:" -anchor e
+entry .laptime -textvar time(lap)
+button .lapzero -text "リセット" -command {
+    set time(lap) [timeformat 0]
+    set time(lstart) [now] ;# if clock running, this needs to be updated
+}
+button .laprecord -text "記録" -command {
+    record L $time(lap)
+}
+proc lapzr {} {
+    .laprecord invoke
+    .lapzero invoke
+}
+bind .lapzero <Control-1> {lapzr; break}
+bind .laprecord <Control-1> {lapzr; break}
+
+button .startstop -text 開始 -command start \
+    -foreground       $time(startColor) \
+    -activeforeground $time(startColor)
+
+frame     .record
+scrollbar .record.sb -command {.record.t yview}
+text      .record.t -height 5 -width 10 -yscroll {.record.sb set}
+button    .record.clear -text クリア -command {.record.t delete 1.0 end}
+
+grid .totallabel .totaltime .totalrecord .totalzero
+grid configure .totallabel    -sticky e
+grid configure .totaltime     -sticky ns
+grid .laplabel .laptime .laprecord .lapzero
+grid configure .laplabel      -sticky e
+grid configure .laptime       -sticky ns
+grid .startstop -columnspan 4 -sticky ew
+
+grid .record       -columnspan 4    -sticky nsew
+grid .record.sb    -column 0 -row 0 -sticky ns
+grid .record.t     -column 1 -row 0 -sticky nsew
+grid .record.clear -column 2 -row 0 -sticky ns
+
+grid columnconfigure . 0       -weight 1
+grid rowconfigure    . 3       -weight 1
+
+grid columnconfigure .record 1 -weight 1
+grid rowconfigure    .record 0 -weight 1
+
+########################################
+# miscellaneous other things of interest to the UI
+########################################
+proc about {} {
+#    tk_messageBox -message "Stopwatch $::version by Don Libes <don@libes.com>"
+    set w .about
+    if {[winfo exists $w]} {
+	wm deiconify $w
+	raise $w
+	return
+    }
+    toplevel     $w
+    wm title     $w "Stopwatch について"
+    wm iconname  $w "about stopwatch"
+    wm resizable $w 0 0
+
+    button $w.b -text 閉じる -command [list wm withdraw $w]
+
+    label $w.title -text "Stopwatch" -font "Times 16" -borderwidth 10 -fg red
+    label $w.version -text "バージョン $::version, 公開日 $::versionDate"
+    label $w.author -text "作者 Don Libes <don@libes.com>"
+    label $w.using -text "次を利用： Tcl $::tcl_patchLevel,\
+                                Tk $::tk_patchLevel"
+    grid $w.title
+    grid $w.version
+    grid $w.author
+    grid $w.using
+    grid $w.b -sticky ew
+}
+
+proc help {} {
+    if {[winfo exists .help]} {
+	destroy .help
+	return
+    }
+
+    toplevel .help
+    wm title .help "Stopwatch ヘルプ"
+    wm iconname .help "Stopwatch help"
+
+    scrollbar .help.sb -command {.help.text yview}
+    text .help.text -width 80 -height 30 -yscroll {.help.sb set} -wrap word
+
+    button .help.ok -text "OK（この画面を閉じる）" -command {destroy .help} -relief raised
+    bind .help <Return> {destroy .help;break}
+    grid .help.sb -row 0 -column 0 -sticky ns
+    grid .help.text -row 0 -column 1 -sticky nsew
+    grid .help.ok -row 1 -columnspan 2 -sticky ew  -padx 2 -pady 2
+
+    # let text box only expand
+    grid rowconfigure .help 0 -weight 1
+    grid columnconfigure .help 1 -weight 1
+
+    .help.text tag configure h1 -foreground #008000
+
+    .help.text insert end "Stopwatch $::version - by Don Libes <don@libes.com>" h1
+    .help.text insert end {
+
+Stopwatchはその名の通り、実際のストップウォッチと同じような操作で時間を計ることができます。Stopwatchはタイマーのようにカウントダウンすることもできます。
+
+Stopwatchは、UNIX、Windows、MacOSで作動します。Stopwatchは、従来のプログラムとして、あるいはブラウザでも作動します。
+
+}
+
+    .help.text insert end "使い方" h1
+    .help.text insert end {
+
+「開始」を押すと計測を開始し、「停止」を押すと停止します。「記録」は経過時間を記録し、これを他のプログラムに簡単に貼り付けられることができます。記録された時間については、「ラップ時間」なら「L」、「合計時間」なら「T」のマークが付きます。停止しているときは、手の操作で時間を切取り／貼付け／編集し、有効な任意の時間に設定することができます。「リセット」は時間をゼロにリセットします。
+
+時間は操作メニューに従って前進または後退します。既定では、ラップ時間または合計時間がゼロになると、タイマーは自動的に停止します。この自動停止機能を無効にするには、「開始」 -> 「ゼロで停止」の選択を解除します。
+
+}
+
+    .help.text insert end "ショートカットキー" h1
+    .help.text insert end "
+
+<z> ラップ時間をゼロにする。  <Z> 合計時間をゼロにする。
+<r> ラップ時間をゼロにリセット。  <R> 合計時間をゼロにリセット。
+<s> 計測の開始／停止。
+<c> 記録をすべてクリア。
+
+コントロールキーを押しながら記録ボタンまたはリセットボタンを押すと、時間を記録し、リセットします。
+
+"
+
+    .help.text insert end "注意書き" h1
+    .help.text insert end {
+
+Stopwatchには、Tcl/Tkが必要です。ミリ秒の計時は、Tcl8.3以降を使用している場合にだけ利用できます。
+
+既定では最大計測時間は、596時間強（約25日）です。ミリ秒表示を無効にすることで、この範囲を（約68年まで）広げることができます。ミリ秒表示を無効にするには、「開始」⇒「ミリ秒表示」を選択してください（あるいは、ソースを編集することで恒久的に変更できます）。
+
+既定では「ゼロで停止」したときベルが鳴ります。これを変更するには、ソースを編集して、お好きなように「ベル」の設定を再定義してください。}
+}
+
+######################################################################
+# set up menu bar
+######################################################################
+
+menu .m -tearoff 0
+.m add cascade -menu .m.f    -label "ファイル(F)"  -underline 5
+.m add cascade -menu .m.e    -label "編集(E)"  -underline 3
+.m add cascade -menu .m.r    -label "開始(S)"   -underline 3
+.m add cascade -menu .m.help -label "ヘルプ(H)"  -underline 4
+
+menu .m.f
+menu .m.e
+menu .m.r
+menu .m.help
+
+.m.f    add command -label "終了"	-command exit
+
+.m.e    add command -label "切り取り" 	-command {event generate [selection own] <<Cut>>}
+.m.e    add command -label "コピー"       -command {event generate [selection own] <<Copy>>}
+.m.e    add command -label "貼り付け"      -command {event generate [selection own] <<Paste>>}
+.m.e    add command -label "クリア"      -command {selection clear}
+.m.e    add command -label "すべて選択" -command {selectAll}
+
+proc selectAll {} {
+    set w [focus]
+    if {$w == "."} {
+	# if no focus, use recording area
+	set w .record.t
+    }
+
+    switch [winfo class $w] {
+	"Text" {
+	    $w tag remove sel 0.0 end
+	    $w tag add sel 1.0 end
+	} "Entry" {
+	    $w selection range 0 end
+	}
+    }
+}
+
+# Note that changes to this menu may impact the indexes below which
+# are manually calculated.
+.m.r    add command -label "開始"      -command start
+.m.r    add checkbutton -label "セロで停止" -variable time(stopAtZero)
+.m.r    add checkbutton -label "ミリ秒表示" -variable time(msecShow) -command msecConfig
+.m.r    add radio   -label "進む"    -variable time(forward) -value 1
+.m.r    add radio   -label "戻る"   -variable time(forward) -value 0
+set menuStartStopIndex 1
+set menuMsecIndex      3
+set menuForwardIndex   4
+set menuBackwardIndex  5
+.m.r entryconfigure $::menuStartStopIndex \
+	              -foreground       $time(startColor) \
+	              -activeforeground $time(startColor)
+
+.m.help add command -label "情報"      -command about
+.m.help add command -label "ヘルプ"       -command help
+. config -m .m
+
+.totalzero invoke
+
+bind all <s> {.startstop    invoke}
+bind all <c> {.record.clear invoke}
+
+bind all <r> {.laprecord    invoke} ; bind all <Control-r> {lapzr}
+bind all <R> {.totalrecord  invoke} ; bind all <Control-R> {totalzr}
+bind all <z> {.lapzero      invoke} ; bind all <Control-z> {lapzr}
+bind all <Z> {.totalzero    invoke} ; bind all <Control-Z> {totalzr}
+
+
