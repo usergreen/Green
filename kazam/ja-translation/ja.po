@@ -55,7 +55,7 @@ msgstr "ウィンドウ枠"
 #: ../data/ui/kazam.ui.h:9 ../data/ui/preferences.ui.h:19 ../kazam/app.py:175
 #: ../kazam/frontend/save_dialog.py:45
 msgid "Screenshot"
-msgstr "スクッリーンショット"
+msgstr "スクリーンショット"
 
 #: ../data/ui/kazam.ui.h:10
 msgid "When capturing include:"
@@ -242,7 +242,7 @@ msgstr "次で編集する："
 
 #: ../kazam/frontend/done_recording.py:73
 msgid "Save for later"
-msgstr "すぐ保存する"
+msgstr "今すぐ保存する"
 
 #: ../kazam/frontend/done_recording.py:83
 msgid "Cancel"
