@@ -1,0 +1,467 @@
++1.4 Support and EOL	12
++Notes for translators	12
++2 Installation	14
++2.1 Introduction	14
++2.1.1 PAE or non-PAE?	14
++2.1.2 32- or 64-bit version?	15
++What is the architecture of your cpu?	15
++How much memory (RAM) do you have?	15
++2.1.3 System requirements	15
++2.2 Creating bootable medium	16
++2.2.1 Obtain ISO image	16
++Purchase	16
++Download	18
++2.2.2 Check validity of downloaded ISO image	18
++md5sum	18
++sha256sum	19
++GPG signature	19
++2.2.3 Create LiveMedium	19
++DVD	19
++USB	19
++2.3 Pre-Installation	20
++2.3.1 Coming from Windows	20
++Backing up files	20
++Backing up email, calendar and contact data	20
++Accounts and passwords	21
++Browser favorites	21
++Software licenses	21
++Running Windows programs	22
++2.3.2 Apple Intel computers	22
++Links	22
++2.3.3 Hard drive FAQs	22
++Where should I install MX Linux?	22
++How can I edit partitions?	23
++What are those other partitions on my Windows installation?	23
++Should I create a separate home partition?	23
++How big should / (root) be?	23
++Do I need to create a swap partition?	24
++What do names like “sda” mean?	24
++2.4 First look	24
++2.4.1 Boot the LiveMedium	25
++Live CD/DVD	25
++Live USB thumb drive	25
++UEFI	25
++Black Screen	26
++2.4.2 Standard opening screen	26
++Main Menu entries	26
++Options	27
++2.4.3 UEFI opening screen	27
++2.4.4 Login screen	29
++2.4.5 Different desktops	30
++MX-Xfce	30
++MX-KDE	30
++Panel	30
++Welcome screen	31
++Tips & Tricks	32
++Applications	33
++Other	34
++System information	34
++Video and audio	34
++2.4.7 Exiting	34
++Permanent	35
++Temporary	35
++2.5 Installation process	36
++2.5.1 Detailed installation steps	36
++Comments	36
++Comments	38
++Comments	40
++Comments	40
++Comments	41
++Comments	42
++Comments	42
++2.6 Troubleshooting	42
++2.6.1 No operating system found	42
++2.6.2 Data or other partition not accessible.	43
++2.6.3 Keyring problems	43
++2.6.4 Locking up	44
++3 Configuration	45
++3.1 Peripheral Devices	45
++3.1.1 Smartphone (Samsung, Google, LG, etc.)	45
++Android	45
++Apple iPhone	46
++3.1.2 Printer	47
++Attached printer	47
++Network Printer	48
++Using Print Settings	48
++3.1.3 Scanner	49
++Basic steps	49
++Troubleshooting	49
++3.1.4 Webcam	49
++3.1.5 Storage	49
++Storage Mounting	49
++Storage Permissions	50
++Solid State Drives	50
++3.1.6 Bluetooth devices	50
++Object Transfer	51
++Links	51
++3.1.7 Pen tablets	51
++Links	52
++3.2 Basic MX Tools	52
++3.2.1 MX Updater (former Apt-Notifier)	52
++3.2.2 Bash Config	53
++3.2.3 Boot Options	54
++3.2.4 Boot Repair	55
++3.2.5 Brightness Systray	56
++3.2.6 Chroot Rescue Scan	56
++3.2.7 Fix GPG keys (formerly Check apt GPG)	56
++3.2.8 MX Cleanup	57
++3.2.9 Codecs Installer	58
++3.2.10 MX Conky	58
++3.2.11  Job Scheduler	59
++3.2.12 Live-USB Maker	59
++3.2.13 Network Assistant	60
++3.2.14 Nvidia Driver Installer	60
++3.2.15 Package Installer	60
++3.2.16 Quick System Info	61
++3.2.17 Repo Manager	62
++3.2.18 Samba Config	62
++3.2.19 Sound Card	63
++3.2.20 System Keyboard	63
++3.2.21 System Locales	64
++3.2.22 System Sounds (Xfce only)	64
++3.2.23 Date & Time	64
++3.2.24 MX Tweak	65
++3.2.25 Format USB	66
++3.2.26 USB Unmounter (Xfce only)	66
++3.2.27 User Manager	66
++3.2.28 User Installed Packages	67
++3.2.29 Deb Installer	67
++3.2.3 Deprecated Tools	68
++3.3 Display	69
++3.3.1 Display Resolution	69
++3.3.2 Graphic drivers	69
++3.3.3 Fonts	71
++Basic adjustment	71
++Advanced adjustments	71
++Adding fonts	71
++3.3.4 Dual Monitors	72
++3.3.5 Power management	72
++3.3.6 Monitor adjustment	72
++3.3.7 Screen tearing	73
++3.4 Network	74
++3.4.1 Wired access	74
++Ethernet and cable	74
++ADSL or PPPoE (Xfce only)	75
++Dial-Up Internet	76
++3.4.2 Wireless Access.	76
++Basic Wireless Steps	76
++Firmware	79
++Security	79
++Links	80
++3.4.3 Mobile Broadband	80
++3.4.4 Tethering	80
++Troubleshooting	80
++3.4.5 Command line utilities	80
++3.4.5 Static DNS	81
++System wide DNS	81
++Individual DNS	81
++3.5 File Management	82
++3.5.1 Tips and Tricks	83
++ 3.5.2 FTP	85
++3.5.3 File Sharing	86
++3.5.4 Shares (Samba)	86
++3.5.5 Creating Shares	87
++3.6 Sound	87
++3.6.1 Sound Card Set-up	87
++3.6.2 Simultaneous card use	87
++3.6.3 Troubleshooting	88
++3.6.4 Sound servers	88
++3.6.5 Links	89
++3.7 Localization	89
++3.7.1 Installation	89
++3.7.2 Post-installation	90
++3.7.3 Further notes	92
++3.8 Customization	93
++3.8.1 Default Theming	93
++3.8.3 Panels	94
++3.8.3.1 Xfce Panel	94
++ 3.8.3.2 KDE/Plasma Panel	96
++3.8.4 Desktop	97
++Conky	99
++Pull-down terminal	100
++3.8.5 Touchpad	100
++3.8.6 Start Menu Customization	101
++3.8.6.1 Xfce (“Whisker”) menu	101
++Editing Xfce menus	102
++3.8.6.2 KDE/Plasma (“kicker”)	102
++Editing KDE menus	103
++3.8.7 Login Greeter	103
++3.8.8 Bootloader	106
++3.8.9 System and Event sounds	107
++3.8.10 Default applications	107
++General	107
++Particular Applications	108
++3.8.11 Limited Accounts	109
++3.9 Accessibility	109
++3.9.1 Screen magnifier	109
++3.9.2 Screen reader	109
++4 Basic use	110
++4.1 Internet	110
++4.1.1 Web browser	110
++4.1.2 Email	110
++4.1.3 Chat	110
++Video Chat	111
++4.2 Multimedia	111
++4.2.1 Music	111
++4.2.2 Video	112
++4.2.3 Photos	114
++4.2.4 Screencasting	115
++4.2.5 Illustrations	116
++4.3 Office	117
++4.3.1 Office suites	117
++4.3.2 Office finances	119
++4.3.3 PDF	119
++4.3.4 Desktop publication	120
++4.3.5 Project time tracker	120
++4.3.6 Video meeting and remote desktop	120
++4.4 Home	121
++4.4.1 Finances	121
++4.4.2 Media Center	121
++4.4.3 Organization	121
++4.5 Security	122
++4.5.1 Firewall	122
++Web Services Dynamic Discovery Service (WSDD)	123
++HELP:	123
++4.5.2 Antivirus	123
++4.5.3 AntiRootkit	124
++4.5.4 Password protection	124
++4.5.5 Web access	124
++4.6 Accessibility	124
++4.7 System	125
++4.7.1 Root privileges	125
++Running a root application	126
++4.7.2 Get hardware specs	126
++4.7.3 Create symbolic links	126
++4.7.4 Find files and folders	127
++GUI	127
++CLI	128
++4.7.5 Kill runaway programs	129
++4.7.6 Track performance	131
++General	131
++Battery	131
++4.7.7 Schedule tasks	131
++4.7.8 Correct time	132
++4.7.9 Show Key Lock	132
++4.8 Good practices	133
++4.8.1 Backup	133
++Data	134
++Configuration files	134
++List of installed program packages	134
++4.8.2 Disk maintenance	135
++Defragging	135
++4.8.3 Error checking	136
++4.9 Games	136
++4.9.1 Adventure and Shooter Games	136
++4.9.2 Arcade Games	137
++4.9.3 Board Games	138
++4.9.4 Card Games	139
++4.9.5 Desktop Fun	139
++4.9.6 Children	140
++4.9.7 Tactics & Strategy Games	141
++4.9.8 Windows games	142
++4.9.9 Game Services	142
++4.10 Google tools	143
++4.10.1 Gmail	143
++4.10.2 Google’s Contacts	143
++4.10.3 Google cal	143
++4.10.4 Google tasks	143
++4.10.5 Google Earth	143
++4.10.6 Google Talk	144
++4.10.7 Google Drive	144
++4.11 Bugs, issues and requests	144
++5 Software Management	145
++5.4 Troubleshooting Synaptic issues	154
++5.5 Other methods	155
++5.5.3 Self-contained packages	157
++5.5.5 More install methods	158
++5.5.6 Links	158
++6 Advanced use	160
++6.1 Windows programs under MX Linux	160
++6.1.1 Open-source	160
++6.1.2 Commercial	161
++Links	161
++6.2 Virtual machines	161
++6.2.1 VirtualBox Setup	162
++6.2.2 VirtualBox Use	163
++Links	164
++6.3 Alternate Window Managers	165
++6.4 Command Line	166
++6.4.1 First steps	167
++6.4.2 Common commands	168
++Filesystem navigation	168
++File management	168
++Symbols	169
++Troubleshooting	169
++Alias	170
++6.4.3 Links	170
++6.5 Scripts	170
++6.5.1 A simple script	171
++6.5.2 A useful script	171
++6.5.3 Special script types	173
++6.5.4 Pre-installed user scripts	174
++inxi	174
++6.5.5 Tips and tricks	174
++6.6 Advanced MX Tools	174
++6.6.1 Chroot rescue scan (CLI)	175
++6.6.2 Live-usb kernel updater (CLI)	175
++6.6.3 MX Live Usb maker	175
++6.6.4 Live remaster (MX Snapshot and RemasterCC)	176
++6.7 SSH (Secure Shell)	178
++6.7.1 SSH Troubleshooting	178
++6.8 Synchronization	179
++7 Under the hood	180
++7.1 Introduction	180
++7.2 The file system structure	180
++The Operating System’s Filesystem	180
++The Disk Filesystem	183
++7.3 Permissions	184
++Basic information	184
++Viewing, setting and changing permissions	185
++7.4 Configuration files	186
++7.4.1 User config files	186
++7.4.2 System config files	187
++7.4.3 Example	187
++7.5 Runlevels	188
++Use	188
++7.6 The kernel	190
++7.6.1 Introduction	190
++7.6.2 Upgrading/Downgrading	190
++Basic steps	190
++Advanced	191
++7.6.3 Kernel upgrade and drivers	192
++7.6.4 More options	192
++7.6.5 Links	192
++7.6.6 Kernel panic and recovery	193
++7.7 Our positions	193
++7.7.1 Systemd	193
++7.7.2 Non-free software	194
++8 Glossary	196
++
+ 
+ 
+ 1	Introduction 
+@@ -182,6 +518,7 @@
+ 
+ 
+ Figure 2-1: Distribution of MX Linux mirrors (Sep 2021).
++
+ Download 
+ MX Linux can be downloaded in two ways from the Download page. 
+     • Direct. Direct downloads are available from our Direct Repo or from our mirrors. Save the ISO image to your hard disk. If one source seems slow, try another one. Available for both original release and monthly update. 
+@@ -505,9 +842,8 @@
+         ◦ Alt-F3 (Xfce) brings up an advanced version that lets you check commands, locations etc. 
+         ◦ On KDE/Plasma desktop, just start typing
+     • Use a keystroke you have defined to open a favorite application. 
+-        ◦ Xfce- Click Application Menu > Settings, then Keyboard, Application shortcuts tab. 
++        ◦ Xfce- Click Application Menu > Settings:  Keyboard, Application shortcuts tab. 
+         ◦ KDE/Plasma – Global Shortcuts in menu
+-          
+ 
+ Figure 2-12: Application Finder identifying application. 
+ Other 
+@@ -791,7 +1127,6 @@
+     • Blueman Troubleshooting 
+     • Arch Wiki 
+     • Debian Wiki on Pairing 
+-
+ 3.1.7  Pen tablets
+ Wacom pen tablets are auto-detected and natively supported on Debian. Details in the MX/antiX Wiki.
+ Links 
+@@ -983,7 +1318,6 @@
+ 
+ This application is intended to facilitate the re-installation of packages that the user has added to the default installation.
+ It can display a list of packages manually installed by the user that can be saved in a simple text file. Furthermore, the application allows loading a saved list of packages for review and selection to be reinstalled. Such a procedure is especially easy and useful when installing a new system.
+-
+ HELP::  file:///usr/share/user-installed-packages/help.html
+ 3.2.29    Deb Installer
+ This simple tool installs downloaded deb (Section 5.5.2) packages.  
+@@ -1276,8 +1610,8 @@
+ 
+ Figure 3-37: using images to label folders.
+ 
+- 3.5.2 FTP 
+ 
++ 3.5.2 FTP 
+ 
+ 
+ Figure 3-38: Using Thunar to access an FTP site. 
+@@ -1589,8 +1923,6 @@
+ 
+ 
+ 
+-
+-
+ 	Figure 3-51: the SDDM configuration app.
+         ◦ The SDDM settings are all in Plasma desktop’s System Settings.  A shortcut launcher for System Settings can be found on MX’s default panel, or you can in any case search for it in the Applications Menu.  In the Settings, go to Startup and Shutdown >> Login Screen (SDDM).
+           
+@@ -1702,7 +2034,6 @@
+ 4.2 Multimedia 
+ Listed here are some of the many multimedia applications available in MX Linux. Advanced professional applications also exist, and can be found through targeted searches in Synaptic. 
+ 4.2.1 Music 
+- 
+ Figure 4-1: Playing a CD track with Strawberry.
+     • Players
+         ◦ Strawberry. A modern music player and library organizer that can play every source from a CD to a Cloud Service. Installed by default. 
+@@ -1864,7 +2195,6 @@
+     • The Firewall “Status:” Blue | indicates that the Firewall is on (enabled). 
+     • Click the Rules button and then +.
+     • Click in the white Search box type “Samba” and click the “+ Add” button and then Close. 
+-
+ Figure 4-10: Adding an exception for Samba
+ NOTE: Samba version 4.7.x and up uses TCP on port 445. This all that is needed for Vista and newer versions of Windows.
+ 
+@@ -1904,6 +2234,7 @@
+         ◦ Debian. Many other tools are available within Debian itself.
+ 		Debian Wiki
+ 
++
+ 4.7 System 
+ 
+ 4.7.1 Root privileges 
+@@ -2352,18 +2683,14 @@
+     • If the package in question is from an MX repository, it is recommended that you “install the maintainers version”.
+     • Otherwise, answer “keep the current version” (N), which is also the default choice. 
+ 5.5 Other methods 
+-
+                5.5.1 Aptitude 
+-Aptitude is a package manager that can be used instead of apt or Synaptic. It is available from the repos, and is particularly helpful when dependency problems arise. Can be run as a straight CLI or as a primitive GUI.
++Aptitude is a package manager that can be used instead of apt or Synaptic. It is available from the repos, and is particularly helpful when dependency problems arise. Can be run as CLI or GUI.
+  
+ Figure 5-5: Aptitude’s home screen (GUI), showing dependency resolver. 
+ For details on this option, see the MX/antiX Wiki. 
+-
+                5.5.2 Deb packages 
+ The software packages installed through Synaptic (and APT behind it) are in a format called Deb (short for Debian, the Linux distribution that devised APT). You can manually install downloaded deb packages using the graphical tool  Deb Installer (section 3.2.28) or the command-line tool dpkg. These are simple tools to install local deb packages. 
+ NOTE: if dependencies can not be satisfied, you will receive a notice and the program will stop. 
+-
+-
+                    Installing *.deb files with dpkg 
+     1. Navigate to the folder containing the deb package you want to install. 
+     2. Right-click an empty space to open a terminal and become root. Alternatively,  click the arrow to move up one level and right-click the folder with the deb package > Open Root Thunar here.
+@@ -2699,15 +3026,12 @@
+ 
+ Figure 6-9: Opening screen of Snapshot.
+ MX Community members use Live remastering with Snapshot to produce unofficial spins of MX Linux that can be tracked on the Forum.
+-
+  VIDEO: MX 16 - Remaster your Live-USB 
+  VIDEO: MX Spins: Workbench! 
+  VIDEO: MX Spins: Stevo's KDE! 
+-
+ The Live ISO may be run with what is called “persistence.” Persistence is a hybrid between a LiveMedium and a full install; it allows you to retain any files you install or add during a live session. Programs installed or removed from, and customizations to, the "demo" user files during live persistence will be carried over to the installed system. 
+  VIDEO: Live USB with persistence (legacy mode) 
+  VIDEO: Live USB with persistence (UEFI mode) 
+-
+ 6.7 SSH (Secure Shell) 
+ SSH (Secure Shell) is a protocol used to securely log onto remote systems. It is the most common way to access remote Linux and Unix-like computers. MX Linux comes with the main packages necessary to run SSH in active mode, the main one being OpenSSH, a free implementation of the Secure Shell that consists of a whole suite of applications. 
+     • Start or restart the ssh daemon as root with the command:
+@@ -2915,8 +3239,6 @@
+     • From the GRUB menu: press e (for edit) when you see the GRUB screen. On the subsequent screen, add a space and the number 3 at the end of the line (by default where the word „quiet” is) that starts with “linux” located one above the lowest line (the actual boot command). Press F-10 to boot. 
+ 
+ Once the cursor is at a prompt, login with your normal username and password. If necessary, you can also login as “root” and provide the administrative password. Useful commands when you are looking at the prompt on runlevel 3 include: 
+-
+-
+ Table 11: Common runlevel 3 commands. 
+ Command 
+ Comment 
+user@debian:~$ 
+
