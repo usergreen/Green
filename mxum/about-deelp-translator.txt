@@ -1,0 +1,13 @@
+Re: mx-docs to update at Github
+
+#11 Post by Jerry3904 » Mon Jul 03, 2023 2:01 pm
+@Wallon Thanks for bringing this up--it has been brought up before, as you know.
+
+The response has not changed very much:
+
+--We would love to only use native speakers for all sorts of reasons in addition to getting the right punctuation.
+--That ideal situation is often constrained by practical factors such as short deadlines, unavailable translators, limited MX personnel time, document length, etc. At one extreme is an application's desktop file, at the other is the 200pp-long Users Manual.
+--When possible, we try a compromise: 1) use machine translation by an excellent service and then 2) make the translated documents available on the Forum for revision by native speakers. That's what was done with the 2023 FAQs, for example. We used DeepL so that many non-English speakers would have an important document available as soon as possible, and then posted here inviting revision (5 received over 3 months). That will also be the method used for the new Users Manual when it is released for MX-23 Final.
+
+https://forum.mxlinux.org/viewtopic.php?p=731851#p731851
+
