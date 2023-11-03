@@ -16,7 +16,7 @@ root@debian:/home/demo# apt install oathtool
 
 ---------------------------------
 
-user@debian:~$ oathtool -h
+demo@debian:~$ oathtool -h
 oathtool 2.6.1
 
 Generate and validate OATH one-time passwords.
@@ -49,7 +49,7 @@ user@debian:~$
 
 --------------------------------------
 oathtoolの使い方
-
 Example:
-$ oathtool --totp --base32 [シークレット]
+
+$ oathtool --totp --base32 [setup key]
 https://kazuhira-r.hatenablog.com/entry/2023/08/02/001711
