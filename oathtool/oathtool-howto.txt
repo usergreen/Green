@@ -47,9 +47,12 @@ oathtool home page: <http://www.nongnu.org/oath-toolkit/>
 General help using GNU software: <http://www.gnu.org/gethelp/>
 user@debian:~$ 
 
---------------------------------------
+----------------------------------
 oathtoolの使い方
 Example:
 
-$ oathtool --totp --base32 [setup key]
+demo@debian:~$ oathtool --totp --base32 [setup key]
+123456
+
+Ubuntu Linux 22.04 LTSで、oathtoolを使ってコマンドラインでTOTPのワンタイムパスワードを生成する
 https://kazuhira-r.hatenablog.com/entry/2023/08/02/001711
