@@ -1,0 +1,55 @@
+
+oathtool - Open AuTHentication (OATH) one-time password tool
+
+root@debian:/home/demo# apt install oathtool
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています                
+状態情報を読み取っています... 完了
+以下の追加パッケージがインストールされます:
+  liboath0
+以下のパッケージが新たにインストールされます:
+  liboath0 oathtool
+アップグレード: 0 個、新規インストール: 2 個、削除: 0 個、保留: 0 個。
+144 kB のアーカイブを取得する必要があります。
+この操作後に追加で 267 kB のディスク容量が消費されます。
+続行しますか? [Y/n] 
+
+---------------------------------
+
+user@debian:~$ oathtool -h
+oathtool 2.6.1
+
+Generate and validate OATH one-time passwords.
+
+Usage: oathtool [OPTIONS]... [KEY [OTP]]...
+
+  -h, --help                    Print help and exit
+  -V, --version                 Print version and exit
+      --hotp                    use event-based HOTP mode  (default=on)
+      --totp[=STRING]           use time-variant TOTP mode  (possible
+                                  values="sha1", "sha256", "sha512"
+                                  default=`sha1')
+  -b, --base32                  use base32 encoding of KEY instead of hex
+                                  (default=off)
+  -c, --counter=COUNTER         HOTP counter value
+  -s, --time-step-size=DURATION TOTP time-step duration  (default=`30s')
+  -S, --start-time=TIME         when to start counting time steps for TOTP
+                                  (default=`1970-01-01 00:00:00 UTC')
+  -N, --now=TIME                use this time as current time for TOTP
+                                  (default=`now')
+  -d, --digits=DIGITS           number of digits in one-time password
+  -w, --window=WIDTH            window of counter values to test when
+                                  validating OTPs
+  -v, --verbose                 explain what is being done  (default=off)
+
+Report bugs to: oath-toolkit-help@nongnu.org
+oathtool home page: <http://www.nongnu.org/oath-toolkit/>
+General help using GNU software: <http://www.gnu.org/gethelp/>
+user@debian:~$ 
+
+--------------------------------------
+oathtoolの使い方
+
+Example:
+$ oathtool --totp --base32 [シークレット]
+https://kazuhira-r.hatenablog.com/entry/2023/08/02/001711
